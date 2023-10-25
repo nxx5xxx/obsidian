@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "06c03922cd732787",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "187ce8a14bb56b16",
             "type": "leaf",
             "state": {
@@ -27,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,7 +145,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "187ce8a14bb56b16",
+  "active": "f76fd0746d87e117",
   "lastOpenFiles": [
     "test.md",
     "무제 폴더",
