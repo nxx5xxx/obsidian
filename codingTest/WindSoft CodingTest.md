@@ -9,4 +9,11 @@
 예를들어 정수 n 이 주어질 때 n의 제곱을 출력하시오
 
 System.out.println((int)Math.pow(n,2)); 이런식으로 해도되고
-System.o
+
+System.out.println(n*n) 이렇게 진행해도 된다
+
+테스트 케이스를 추가 할 수 있으나 프로그래머스 코딩테스트 처럼
+
+답을 적어놓는 칸은 없어서 조금 아쉽다
+
+
