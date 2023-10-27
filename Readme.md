@@ -19,7 +19,7 @@
 
 
 
-<img src="./howToOpsidian/1.PNG">
+<img src="./howToOpsidian/3.PNG">
 
 ### 여기 화면에 option이라 써있는 저 부분이 enable로 되어있는데 사용함 체크하면 저렇게 바뀐다
 
