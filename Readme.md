@@ -7,18 +7,19 @@
 >  실행을 하면 총 세계의 메뉴가 보이는데 그 중 두번째 메뉴인
 >  New vault ~~~ 로 디렉토리를 만들어준다
 >  그 후 좌측 상단에 있는 버튼을 눌러 아래 화면과 같이 진행한다
-![[Screenshot_20231026-014111.png]]
+
+
+<img src="./howToOpsidian/1.PNG">
 
 ### Community plugins 에 들어가
 
-![[Screenshot_20231026-014125.png]]
-
+<img src="./howToOpsidian/2.PNG">
 
 ###  상단 첫번째 turn on 클릭 후 두번째 커뮤니티 플러그인에 browse
 
 
 
-![[Screenshot_20231026-014141.png]]
+<img src="./howToOpsidian/1.PNG">
 
 ### 여기 화면에 option이라 써있는 저 부분이 enable로 되어있는데 사용함 체크하면 저렇게 바뀐다
 
