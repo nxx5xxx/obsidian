@@ -25,7 +25,10 @@
 
 ### 위의 창을 아래로 드래그하면 아래 사진과 같은 창이 나오는데 그 창에 init을 입력하여 .git을 생성해준다
 
-![[Screenshot_20231027-153131.png]]
+<img src="./howToOpsidian/4.png">
 
 ### 해당 작업을 완료 한 후 다시 좌측탭에서 상단 톱니바퀴를 누르고 가장 아래쪽에 위치한 obsidian git에 들어가 option탭에 들어간다
 
+<img src="./howToOpsidian/5.png">
+
+### 1번에는 유저네임 2번엔 깃 토큰 3번에는 유저네임 4번은 이메일 순으로 기재 후 뒤로가기 버튼을 눌러 나온다 그 후 상단을 아래로 드래그하여 클론을 검색 후 clone an exist repo 를 선택하여 진행하먄 pull과 push가 ㅈ
