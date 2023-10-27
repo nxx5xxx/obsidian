@@ -9,17 +9,17 @@
 >  그 후 좌측 상단에 있는 버튼을 눌러 아래 화면과 같이 진행한다
 
 
-<img src="./howToOpsidian/1.PNG">
+<img src="howToOpsidian/1.png">
 
 ### Community plugins 에 들어가
 
-<img src="./howToOpsidian/2.PNG">
+<img src="./howToOpsidian/2.png">
 
 ###  상단 첫번째 turn on 클릭 후 두번째 커뮤니티 플러그인에 browse
 
 
 
-<img src="./howToOpsidian/3.PNG">
+<img src="./howToOpsidian/3.png">
 
 ### 여기 화면에 option이라 써있는 저 부분이 enable로 되어있는데 사용함 체크하면 저렇게 바뀐다
 
