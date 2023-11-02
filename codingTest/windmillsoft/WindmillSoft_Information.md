@@ -32,6 +32,14 @@ https://trailhead.salesforce.com/ko?utm_campaign=trailhead_corp&utm_medium=web-l
 
 # 스몰빌더
 윈드밀소프트에서 개발한(?) 코드없이 사용할수 있는 툴
+프리버전을 지원한다하여 받아서 해보려고 했으나
+바로 다운로드 되는것이 아닌 회사측에서 연락오는 시스템인지 아직도 사용못해봤다
+
+# 심플리챗
+>비싸다
+>**Starting at $7,200**   **USD/company/year**
+>라고 적혀있는데
+>무료이용이 없는것 같다 어떤제품인지 사용해볼수는 없었으나
 
 
 
