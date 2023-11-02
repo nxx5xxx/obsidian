@@ -19,7 +19,20 @@ Interface API 개발
 
 # SalesForce
 
-세일즈포스사의 자체개발 솔루션 제품
+>세일즈포스사의 자체개발 CRM 제품
+https://trailhead.salesforce.com/ko?utm_campaign=trailhead_corp&utm_medium=web-landing-page&utm_source=sfdc
+
+>에서 무료로 교육 이 가능하다
+>국내 정보가 너무없다 영어공부를 병행하여야 할것같다
+>APEX라는 언어를 사용하는데 java와 흡사하며 Java로도 할 수 있으나
+>최신 버전의 바로바로 적용되는것이 아니라고 한다
+>이건뭐 진즉에 쓰고있는 자바버전도 구버전이라 크게 상관없을것 같고
+>차라리 APEX를 배워 적용하는게 더 날것같다
+
+
+# 스몰빌더
+윈드밀소프트에서 개발한(?) 코드없이 사용할수 있는 툴
+
 
 
 --
