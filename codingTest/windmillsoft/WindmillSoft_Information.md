@@ -40,6 +40,12 @@ https://trailhead.salesforce.com/ko?utm_campaign=trailhead_corp&utm_medium=web-l
 >**Starting at $7,200**   **USD/company/year**
 >라고 적혀있는데
 >무료이용이 없는것 같다 어떤제품인지 사용해볼수는 없었으나
+>설명과 사진을 보아 세일즈포스sw에서 카카오톡과 연동하여
+>고객들을 다룰수 있는것같다
+>(사진에 보면 오타있다 무엇을 도와들릴까요?)
+
+# 심플리 메시지
+> 세일즈포스에서 메시지를 보낼수 있도록 하는 기능
 
 
 
