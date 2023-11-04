@@ -20,4 +20,21 @@ System.out.println(n*n) 이렇게 진행해도 된다
 
 # 코딩테스트 설명
 
+### 2번
+>public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String input = br.readLine();
+        String[] str_arr = input.split(" ");
+        double result=Double.parseDouble(str_arr[0])*Double.parseDouble(str_arr[1])/2;
+        System.out.printf("%.1f",result);
+    }
+
+> 기존에 주어지는 BufferedReader는 그대로 사용하였고
+> 밑변과 높이가 공백을 사이에 두고 입력되므로
+> split() 메소드를 사용하여 해당 글자들을 배열에 저장해주었다
+> 그 후 결과값에 맞게 parseDouble()메소드를 사용해주고 (float보다 Double이 정확성이 더 좋은걸로 알고있어서 double로 변환해준것)
+> println이 아닌 printf문으로 소수점 1번째 자리까지 출력하도록 해주어 답을 출력해주었다
+
+
+### 3번
 
