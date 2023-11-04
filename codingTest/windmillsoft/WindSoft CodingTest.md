@@ -36,5 +36,3 @@ System.out.println(n*n) 이렇게 진행해도 된다
 > println이 아닌 printf문으로 소수점 1번째 자리까지 출력하도록 해주어 답을 출력해주었다
 
 
-### 3번
-
