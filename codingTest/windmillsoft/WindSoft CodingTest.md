@@ -125,3 +125,53 @@ System.out.println(n*n) 이렇게 진행해도 된다
 > 입력한 키가 없을 경우엔 공급을 받은 집이 아니므로 시작 집이라 판단하여 해당집을  
 > 출력문으로 출력하도록 하였다
 
+## 5번
+
+>public static void main(String[] args) throws Exception {  
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));  
+        String input = br.readLine();  
+        /*  
+        첫줄 n. 현재금액 , m 거래횟수  
+        둘째줄부터 m번만큼 실행  
+        deposit : + 입금 , pay : - 결제  
+        reservation : -결제 현재금액보다 크다면 대기목록으로  
+        대기목록은 순서대로 결제되니까 fifo구조  
+        계좌의 현재 잔액이 첫번째 금액보다 커지면 작아질때까지 바로 결제가됨  
+        한줄 실행하고 한번 확인하고 또는 deposit(입금)이 발생했을때 reservation을 확인하는게 나을 듯하다  
+        \*/  
+        //금액  
+        int money = Integer.parseInt(input.substring(0,input.indexOf(" ")));  
+        //거래횟수  
+        int deal = Integer.parseInt(input.substring(input.indexOf(" ")+1));  
+        //거래를 담을 배열   
+        String\[]\[] arr = new String\[deal]\[2];  
+        for(int i=0;i<deal;i++){  
+            arr[i]=br.readLine().split(" ");  
+        }  
+        //reservation  
+        Queue\<Integer> rsv = new LinkedList<>();  
+        for(int i=0;i<arr.length;i++){  
+            int sys_money = Integer.parseInt(arr[i][1]);  
+            switch(arr[i][0]){  
+                case "deposit":  
+                    money+=sys_money;  
+                        while(!rsv.isEmpty()){  
+                            if(money>=rsv.peek()){money-=rsv.poll();  
+                            }else{break;}  
+                        }  
+                    break;  
+                case "pay":  
+                    if(money>=sys_money){money-=sys_money;}  
+                    break;  
+                case "reservation":  
+                    rsv.offer(sys_money);  
+                        while(!rsv.isEmpty()){  
+                            if(money>=rsv.peek()){money-=rsv.poll();  
+                            }else{break;}  
+                        }  
+                    break;  
+            }  
+        }  
+        System.out.println(money);  
+    }  
+
