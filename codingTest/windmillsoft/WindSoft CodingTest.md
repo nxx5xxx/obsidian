@@ -16,13 +16,15 @@ System.out.println(n*n) 이렇게 진행해도 된다
 
 답을 적어놓는 칸은 없어서 조금 아쉽다
 
---
+----
 
 # 코딩테스트 설명
 
 ### 2번
 >public static void main(String[] args) throws Exception {
+>
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+>        
         String input = br.readLine();
         String[] str_arr = input.split(" ");
         double result=Double.parseDouble(str_arr[0])*Double.parseDouble(str_arr[1])/2;
