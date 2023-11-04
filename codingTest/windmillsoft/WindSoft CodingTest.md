@@ -79,3 +79,40 @@ System.out.println(n*n) 이렇게 진행해도 된다
 
 ### 4번
 
+>    public static void main(String[] args) throws Exception {  
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));  
+        String input = br.readLine();  
+        /*
+            물탱크가 모든 집에 원할하게 공급할 수 있는 위치를 찾아야함  
+            n개 가구와 n-1개의 단향으로 수로설치  
+            모든수로는 한쪽으로만 이동  
+            1개의 개구에서 여러갈래 가능하지만 들어오는구멍은 하나뿐 > 출구여러개 입구한개  
+            같은집으로 나갔던 물이 돌수없음  
+            물탱크는 한곳만 설치가능  
+            첫줄은 가구의 개수  
+            둘째줄은 앞은 수로 출구번호 뒤는 수로 입구번호  
+            물탱크를 설치한 위치를 찾으시오  
+            쉽게 뒤에 나온적 있던애들은 다 제외  
+            n이 200,000까지 가니까 List보단 Hash가 빠를것같음  
+        */
+        int input_int = Integer.parseInt(input);  
+        HashMap<String, Boolean> map = new HashMap<>();  
+        //substring에 숫자 지정하면 자리수 넘어갈 경우 문제일어남  
+        //indexOf랑 같이써야할거같다  
+        for(int i=1;i<input_int;i++){  
+            String tmp = br.readLine();  
+            map.put(tmp.substring(tmp.indexOf(" ")+1),true);  
+        }  
+        int sw = -1;  
+        for(int i=1;i<=input_int;i++){  
+            if(!map.containsKey(i+""))sw=i;  
+        }  
+        System.out.println(sw);  
+    }  
+
+> 물은 한쪽으로만 흐르고 맨 앞에 나왔던 집 번호가 뒤에도 나온적이 있다면  
+> 다른 집에서 받아온적이 있다는 공통점을 이용하여 접근   
+> 즉, 뒤에 나온번호만 다 저장해놓고 그 뒤에 나왔던 번호가 앞에 나왔던 적이 없다면  
+> 해당 집 번호는 다른곳에서 받아온 적이 없는 물탱크가 설치 되어있는 집인것  
+> 시작번호와 끝번호는 띄어쓰기를 구분하여 받고 줄바꿈을 이용하여 다음 집을 입력하는 것 이므로  
+> 
