@@ -151,8 +151,8 @@ System.out.println(n*n) 이렇게 진행해도 된다
         //reservation  
         Queue\<Integer> rsv = new LinkedList<>();  
         for(int i=0;i<arr.length;i++){  
-            int sys_money = Integer.parseInt(arr[i][1]);  
-            switch(arr[i][0]){  
+            int sys_money = Integer.parseInt(arr\[i]\[1]);  
+            switch(arr\[i]\[0]){  
                 case "deposit":  
                     money+=sys_money;  
                         while(!rsv.isEmpty()){  
@@ -179,4 +179,11 @@ System.out.println(n*n) 이렇게 진행해도 된다
 > 현재금액 n 과 거래횟수 m이 주어지니까 m번만큼 반복문을 실행하여야 함  
 > m번사이즈와 2칸짜리 배열을 만들어 그 배열에 m번(arr.length)만큼 반복하여  
 > 배열\[i]\  에 저장하는 반복문을 만들어 저장하고 (띄어쓰기 기준으로 한줄씩 입력)  
-> deposit이나 pay같은 경우에는 그냥 사용하면 되지만
+> deposit이나 pay같은 경우에는 그냥 사용하면 되지만  
+> reservation 의 경우 reservation에 있는 값을 불러들일 경우 순서가 보장되어야 하고  
+> 가장 먼저 넣은값을 불러들일때 가장 먼저 빼야하는 FIFO구조인 linkedlist가 제격이라고 판단  
+> pay부분에서 지불할 금액이 모자를 경우 그것도 reservation에 넣어야하나 고민하다  
+> 해당 부분에 대한 설명이 부족하다 느껴 금액이 부족할 경우엔 무시하도록 break를 넣어버렸다  
+> reservation의 경우 결제가 되더라도 먼저 결제대기중인 금액부터 결제해야 하므로  
+> 일단 rsv에 해당하는 값을 집어넣고 rsv에 빈 값이 없을때까지 반복  
+> 
