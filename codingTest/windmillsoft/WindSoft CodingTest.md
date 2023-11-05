@@ -314,4 +314,68 @@ System.out.println(n*n) 이렇게 진행해도 된다
 > 싶기도 하였다 누군가 코드리뷰를 해줬으면 좋겠다는 생각이 많이든 부분  
 > 개인적으로 재귀함수는 뭔가 나중에 코드 봐도 눈으로만 코드 해석하기가 너무 불편해서  
 > 자주 안쓰는 편 인데 재귀 함수를 사용하지 않고선 도저히 반복문의 깊이를  
-> 설정할 방법이 떠오르질 않았다 그리하여 
+> 설정할 방법이 떠오르질 않았다 그리하여 재귀함수를 사용하였는데  
+> 해당 코드를 풀어서 써보자면  
+
+
+> versus = k길이  
+> noc(numb,k)  
+	noc(0,4)  
+		{  
+		versus[0] = -1;  
+		noc(1,4)  
+			{  
+			versus[1] = -1;  
+			noc(2,4)  
+				{  
+				versus[2] = -1;  
+				noc(3,4)  
+					{  
+					versus[3] = -1;  
+					noc(4,4)  
+						{  
+						if 4(numb) == 4 (k)  
+						tmp[] =  [-1,-1,-1,-1] clone  
+						list.add(tmp)  
+						return ;  
+						versus[3] = 0;  
+						noc(4,4)  
+						if 4(numb) == 4 (k)  
+						tmp[] =  [-1,-1,-1,0] clone  
+						list.add(tmp)  
+						return ;  
+						versus[3] = 1;  
+						noc(4,4)  
+						if 4(numb) == 4 (k)  
+						tmp[] =  [-1,-1,-1,1] clone  
+						list.add(tmp)  
+						return ;  
+						}  
+					versus[2] = 0;  
+					noc(3,4)  
+					{  
+					versus[3] = -1;  
+					noc(4,4)  
+						{  
+						if 4(numb) == 4 (k)  
+						tmp[] =  [-1,-1,0,-1] clone  
+						list.add(tmp)  
+						return ;  
+						versus[3] = 0;  
+						noc(4,4)  
+						if 4(numb) == 4 (k)  
+						tmp[] =  [-1,-1,0,0] clone  
+						list.add(tmp)  
+						return ;  
+						versus[3] = 1;  
+						noc(4,4)  
+						if 4(numb) == 4 (k)  
+						tmp[] =  [-1,-1,0,1] clone  
+						list.add(tmp)  
+						return ;  
+						}  
+
+> 이런식으로 동작하게 끔 작성하였다  
+> 그리고 또 해당 리스트를 불러와 해당 배열의 값을 반복문으로 더하기 작업을 하여  
+> 동전 0이 될 경우 바로 HashSet에 삽입하여 중복되는 경우의 수를 제거  
+> 
