@@ -190,3 +190,38 @@ System.out.println(n*n) 이렇게 진행해도 된다
 > 아닐 경우(결제 대기액이 현재금액보다 작거나 같을경우) LinkedList에서 해당  
 > 금액을 빼와 현재 금액에서 차감해준다  
 > 이 과정들을 m 번만큼 반복한 후 남은 현재금액을 출력해줌
+
+## 6번
+
+>    public static void main(String[] args) throws Exception {  
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));  
+>        String input = br.readLine();  
+        /*  
+            케이크조각의 개수를 3이상 1000이하  
+            n과 k가 입력으로 주어짐 n 은 케이크 조각의 개수  
+            항상 처음 조각을 먹고 그후있는 조각부터 k번째만큼의 케잌을 먹는다  
+            2번째는 1+k 3번째는 1+k+k 1....+k가 n을 넘어갈 경우엔 n보다 크지않을때까지 n만큼 빼준다  
+            케이크조각이 2조각남으면 먹는것을 멈추기  
+            먹은 케이크 조각은 뺴주고 나머지 케이크 조각에서 계산해야한다  
+            인덱스번호가 있고 순서가 보장되는 List가 하기에 간편해보인다  
+        \*/  
+        List\<Integer> cake = new ArrayList<>();  
+        //n과 k  
+        int total = Integer.parseInt(input.substring(0,input.indexOf(" ")));  
+        int k = Integer.parseInt(input.substring(input.indexOf(" ")+1));  
+        //리스트에에 케이크 넣어주기  
+        for(int i=1;i<=total;i++)cake.add(i);  
+        //어레이리스트의경우 remove하면 앞으로 당겨지므로 n만큼빼지말고 size만큼 빼줘야함  
+        //하나 지워서 한칸 앞으로 당겨지므로 현재인덱스번호 i+k-1을 해줘야함  
+            for(int i=0;cake.size()>2;i+=(k-1)){  
+                if(i>=cake.size()){  
+                    //기존에 -=로 했던거 나머지로 수정 사이즈를 한바퀴 이상 순회할시 에러가 발생  
+                    i%=cake.size();  
+                }  
+                cake.remove(i);  
+            }  
+        System.out.println(cake.get(0)+" "+cake.get(1));  
+    }  
+
+> 케이크조각의 개수 n, k번째 케잌을 먹음 띄어쓰기로 구분
+> 항상 처음은 1번째(0번째 인덱스) 케잌을 먹고 그다음부터 k번째 후의 케잌을 먹음
