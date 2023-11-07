@@ -19,6 +19,6 @@ IE([[Information Engineering Notation]] 정보공학 표기법)과 Barker표기�
 ![1:N표기법](./img/1n.png)
 
 > 이 사진은 게시글이 회원정보를 참조한 1:N관계 를 나타낸다  
-> 동그라미로 표시한 
+
 
 ## 관계 선택 사양 (Optionality) 
