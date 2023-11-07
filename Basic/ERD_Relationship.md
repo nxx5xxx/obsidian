@@ -17,6 +17,6 @@
 
 -- test--
 
-![[./img/1n.png]]
+![1:N표기법](./img/1n.png)
 
 ## 관계 선택 사양 (Optionality) 
