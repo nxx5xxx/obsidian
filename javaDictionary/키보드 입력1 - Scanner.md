@@ -15,6 +15,14 @@
 
 #### 참고사항
 > Scanner의 이용가능한 메소드로는  
+> next() - String값 반환
 > nextLine() - String값 반환  
-> nextInt() - int값 반환  
-> next
+> nextInt() - 정수값 반환  
+> nextDouble() - 실수값 반환  
+> nextBoolean() - 2bit 반환  
+> 등 8가지 프리미티브 타입과 String(Line) 으로 구성된다  
+> 여기서 next와 nextLine()의 차이는 next는 띄어쓰기 전 까지 읽어들이고  
+> nextLine()은 띄어쓰기를 포함하여 줄바꿈(엔터) 가 나오기 전 까지 읽어들인다
+
+#### 참고사항2
+> Scanner객체를 다 사용후에는 .close() 메소드로 닫아줘야한다.  
