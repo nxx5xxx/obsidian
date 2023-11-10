@@ -16,4 +16,14 @@
 
 ### 피해야 하는 이유
 > Infinity와 NaN에는 어떤 값을 연산 하더라도 똑같은 Infinity와 NaN으로 결과가 나온다.  
-> 이것으로 인해 모든 연산결과가 엉망이 될 수 있으므로 해당
+> 이것으로 인해 모든 연산 결과가 엉망이 될 수 있으므로 해당 구문을 처리해 줘야 한다.
+
+#### 처리법
+> Double.isInfinite(변수) 와 Double.isNaN(변수) 을 사용함으로 써 해당 결괏값이  
+> Infinity 일 경우 True 와 NaN일 경우 true를 산출하여 구분 할 수 있다.
+
+#### 처리 예시
+> int x = 5;  
+> double y = 0.0;  
+> double z = x / y;
+> if( Double.isInfinite() 와 Double.isNaN())
