@@ -25,7 +25,7 @@
 #### 처리 예시
 > int x = 5;  
 > double y = 0.0;   
-> double z = x / y;  
+> double z = x / y;  또는 double z = x % y;  
 > if(Double.isInfinite(z) || Double.isNaN(z)){  
 		System.out.println("결괏값이 NaN또는 Infinity에 해당됩니다");  
 	}else{  
