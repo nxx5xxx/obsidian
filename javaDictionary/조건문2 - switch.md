@@ -34,7 +34,32 @@
 > 출력값 :   
 > "양념치킨 굳"
 
+#### 사용법2
+> switch 문은 break를 넣지않거나 Expressions(표현식)를 사용하여 여러개의 케이스를 묶을 수 있다.
 
+#### 예시2 - break제거
+> 대소문자의 구분이 없이 확인하기
+> char chr = 'B'  
+> switch(chr){  
+> 	case 'A' :  
+> 	case 'a' :  
+> 		System.out.println("알파벳 에잉");
+> 	 break;
+> 	case 'B' :  
+> 	case 'b' :  
+> 		System.out.println("알파벳 빙");
+> 	 break;
+> 	 default : 
+> 		 System.out.println("모른다.");
+> }
 
-
+#### 예시3 - Expressions
+> 대소문자의 구분이 없이 확인하기
+> char chr = 'B'  
+> switch(chr){  
+> 	case 'A','a' ->{System.out.println("알파벳 에잉");}
+> 	case 'B','b' ->{System.out.println("알파벳 빙");}
+> 	 default ->{ System.out.println("모른다.");}
+> }
+> 
 
