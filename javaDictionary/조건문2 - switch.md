@@ -61,5 +61,6 @@
 > 	case 'B','b' ->{System.out.println("알파벳 빙");}
 > 	 default ->{ System.out.println("모른다.");}
 > }
-> 
+> 위에는 실행문이 하나라 중괄호를 생략해도 되며
+> 해당 구문은 자바12 버전 이상서 부터 사용이가능하다
 
