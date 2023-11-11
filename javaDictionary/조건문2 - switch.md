@@ -4,6 +4,7 @@
 >  switch 안에 들어간 변수가 일치하는 case문에 있는 코드들을 실행시킨다  
 >  해당 코드들은 break;가 나오기 전까지 실행되며 break;가 빠져있다면  
 >  case에 해당되더라도 break; 가 나올때까지 진행된다.
+>  switch문의 [[매개변수]]로는 정수타입(byte, short, char, int, long)과 문자열 타입 변수를 사용할 수 있다.
 
 #### 사용법
 > switch(변수){  
