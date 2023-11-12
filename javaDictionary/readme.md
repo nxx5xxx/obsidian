@@ -26,6 +26,8 @@
 25. [[조건문2 - switch]]
 26. [[반복문1 - for]]
 27. [[반복문2 - while]]
+28. [[break]]
+29. [[continue]]
 ##### about
 > 아직 업데이트 중 이며 obsidian 기준으로 만들어 github에서 보기엔 불편할 수 있습니다  
 > 

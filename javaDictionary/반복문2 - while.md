@@ -1,3 +1,5 @@
+#반복문
+
 ### 특징
 > while문은 while과 do while로 나뉜다  
 > while의 구조로는 while(조건식){ 조건식이 만족하는 동안 코드 실행}  
