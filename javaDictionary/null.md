@@ -79,6 +79,10 @@
 > String a = "자바";
 > String b = a;
 > a = null;
+>또는  
+>String a = "자바";
+>String b = "자바";
+>a = null;
 
 
 |스택영역| |
