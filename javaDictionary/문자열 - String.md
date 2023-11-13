@@ -1,4 +1,4 @@
-#ReferenceType
+#ReferenceType #String
 ### 특징
 > 굳이 String을 설명해야 하나 싶기도 하지만 그래도 기술.  
 > String의 특징으로는 문자열 데이터 값이 동일하다면 String 객체를 공유하도록 되어있다  
@@ -62,4 +62,14 @@
 |0xeee9|"자바"|
 |0xeee1|"자바"|
 
-> Stack영역과 Heap영역에는 각각 ㅇ
+> Stack영역과 Heap영역에는 각각 이렇게 메모리가 사용이 될 것이고  
+> a와 c 변수는 같은 String 객체의 주소를 참조하게 될 것이고 b는 새로운 객체를 생성하게 되어  
+> a == b 의 결과를 출력 해 보면  false  
+> a == c 의 결과를 출력 해 보면 true가 나올것 이다.
+
+
+#### 사용할 수 있는 메소드
+> 객체 주소에 상관없이 내부 값 비교 [[equals|a.equals(b)]]  
+> 문자열에서 해당 문자만 추출하는 [[charAt|a.charAt(b)]]  
+> 문자열의 길이를 반환하는 [[length|length()]]
+> 
