@@ -71,5 +71,10 @@
 #### 사용할 수 있는 메소드
 > 객체 주소에 상관없이 내부 값 비교 [[equals|a.equals(b)]]  
 > 문자열에서 해당 문자만 추출하는 [[charAt|a.charAt(b)]]  
-> 문자열의 길이를 반환하는 [[length|length()]]
+> 문자열의 길이를 반환하는 [[length|length()]]  
+> 문자열을 다른 문자열로 교체하는 [[replace|a.replace(String older,String new)]]  
+> 문자열을 잘라내 갖고오는 [[substring|substring()]]  
+> 문자열의 위치를 알 수 있는 [[indexOf|a.indexOf(String b)]]  
+> 문자열의 포함 여부를 알 수 있는 [[contains|a.contains(String b)]]  
+> 문자열을 문자열 기준으로 분리하여 배열에 저장하는 [[split|a.split(String b)]]
 > 
