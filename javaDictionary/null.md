@@ -76,13 +76,13 @@
 
 #### 참고사항3
 > 0xeee5라고 써있는 "자바" 를 쓰레기 객체로 취급하지 않는 경우는 아래의 예와 같다  
-> String a = "자바";
-> String b = a;
-> a = null;
+> String a = "자바";  
+> String b = a;  
+> a = null;  
 >또는  
->String a = "자바";
->String b = "자바";
->a = null;
+>String a = "자바";  
+>String b = "자바";  
+>a = null;  
 
 
 |스택영역| |
