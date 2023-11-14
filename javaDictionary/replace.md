@@ -1,6 +1,12 @@
 #### 특징
 > replace에는 replace() 와 replaceAll() 그리고 replaceFirst()가 있다  
-> 세가지 다 동작 방법이 다르며 사용방법 또한 다르다 아래에 하나씩 기술해 보겠다.  
+> 세가지 다 동작 방법이 다르며 사용방법 또한 다르다 아래에 하나 씩 기술해 보겠다.  
+
+##### 메모리
+> 당연하겠지만 replace 3형제를 통해 새로운 문자열을 만들게 되면  
+> 기존의 heap영역에 등록된 객체의 값을 변경하는 것이 아니라  
+> heap영역에 새롭게 객체를 생성하게 되는것이다.
+
 
 ---
 #### replace()
@@ -42,3 +48,12 @@
 ---
 
 #### replaceFirst
+> replaceAll과 같이 replaceFirst(regex, replacement) [[정규표현식]]을 이용하여 할 수 있는데  
+> replaceAll과의 차이점은 가장 처음 나오는 문자열을 바꾼 후 뒤에 문자열들은 바꾸지 않는다.  
+
+##### 예시
+>String str = "Java Java Java";  
+>String replaceFirstTest = str.replaceFirst("Java", "Molba");  
+>System.out.println(replaceFirstTest);  
+>결괏값 :  
+>Molba Java Java

@@ -37,7 +37,7 @@
 36. [[문자열 - String]]
 37. [[equals]]
 38. [[length]]
-39. 
+39. [[replace]]
 ##### about
 > 아직 업데이트 중 이며 obsidian 기준으로 만들어 github에서 보기엔 불편할 수 있습니다  
 > 
