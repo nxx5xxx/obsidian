@@ -7,8 +7,35 @@
 
 #### 사용방법 - split(String regex)
 > a.split(String regex)  
-> 정규 표현식을 기준으로도 나눐
+> regex로 써놓은 바와 같이 정규 표현식을 기준으로도 나눌 수 있다
 
 ##### 예시
 > String str = "도망가-가가각-가가가각-도망가-망가-내게로 부터 멀리";  
-> String[] splitStr = str.split("-");
+> String[] splitStr = str.split("-");  
+> System.out.println(Arrays.toString(splitStr));  
+> 결괏값 :   
+> \[도망가, 가가각, 가가가각, 도망가, 망가, 내게로 부터 멀리]  
+> 해당 예시문 에서는 문제가 발생하지 않는다. 예시2를 보자
+
+##### 예시2
+> String str = "도망가-가가각-가가가각-도망가-망가---";  
+> String[] splitStr = str.split("-");  
+> System.out.println(Arrays.toString(splitStr));  
+> 결괏값 :   
+> \[도망가, 가가각, 가가가각, 도망가, 망가, , , ]  
+> - 를 기준으로 나눳기 때문에 빈곳이 들어찬다 이와 같은 오류를 해결해줄것이  
+> int limit의 값이다  
+
+---
+#### 사용방법2 - split(String regex, int limit)
+> a.split(String regex, int limit)
+
+##### 예시1 - limit \== 0
+> String str = "A-B-C-D--E--F----";  
+> String[] splitStr = str.split("-",0);  
+> System.out.println(Arrays.toString(splitStr));  
+
+
+
+
+ 
