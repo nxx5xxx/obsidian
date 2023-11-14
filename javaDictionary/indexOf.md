@@ -4,6 +4,7 @@
 > indexOf는 가장 앞에서 부터 찾아 그 값 한개를 반환하며  
 > lastIndexOf는 뒤에서 부터 해당 값을 찾아 그 위치 한개를 반환한다.
 
+---
 #### 사용방법 - indexOf
 > a.indexOf(String b);  
 
@@ -13,6 +14,7 @@
 > 결괏값 :  
 > 0
 
+---
 #### 사용방법 - lastIndexOf
 > a.lastIndexOf(String b);  
 
@@ -20,4 +22,4 @@
 > String str = "abababab";  
 > System.out.println(str.lastIndexOf("a"));  
 > 결괏값 :  
-> 0
+> 6

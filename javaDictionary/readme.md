@@ -39,6 +39,8 @@
 38. [[length]]
 39. [[replace]]
 40. [[substring]]
+41. [[indexOf]]
+42. [[contains]]
 ##### about
 > 아직 업데이트 중 이며 obsidian 기준으로 만들어 github에서 보기엔 불편할 수 있습니다  
 > 
