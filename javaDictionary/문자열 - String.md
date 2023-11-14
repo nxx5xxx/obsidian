@@ -77,4 +77,5 @@
 > 문자열의 위치를 알 수 있는 [[indexOf|a.indexOf(String b)]]  
 > 문자열의 포함 여부를 알 수 있는 [[contains|a.contains(String b)]]  
 > 문자열을 문자열 기준으로 분리하여 배열에 저장하는 [[split|a.split(String b)]]  
+> [[정규표현식]]을 이용하여 포함 여부를 알 수 있는 [[matches|a.matches(String regex)]]
 > 등 이 주로 사용된다.
