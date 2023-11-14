@@ -34,6 +34,10 @@
 33. [[힙 영역]]
 34. [[스택 영역]]
 35. [[null]]
+
+---
+#### 여기서부터는 Reference Type과 관련되어 있을 가능성이 큼
+
 36. [[문자열 - String]]
 37. [[equals]]
 38. [[length]]
@@ -42,7 +46,8 @@
 41. [[indexOf]]
 42. [[contains]]
 43. [[split]]
-44. 
+44. [[matches]]
+45. [[배열 - Array]]
 ##### about
 > 아직 업데이트 중 이며 obsidian 기준으로 만들어 github에서 보기엔 불편할 수 있습니다  
 > 
