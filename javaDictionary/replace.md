@@ -21,4 +21,13 @@
 
 ---
 #### replaceAll()
-> replace(String )
+> replace(String regex, String replacement)로 기술되어 있는데  
+> 이는 구현부에 들어가 코드를 뜯어보면  
+> public String replaceAll(String regex, String replacement) {  
+> return Pattern.compile(regex).matcher(this).replaceAll(replacement);  
+> }  
+> 와 같은 형태로 되어있다.  
+> 즉, Pattern객체를 사용하고 해당 객체는 한번 사용 후 재사용 되지 않기때문에  
+> GC의 대상이 되어 객체 생성비용이 높다(메모리 사용량 상승)  
+> 그렇다면 replaceAll은 왜 사용하는가?  
+> replaceAll에서는 정규 표현식의 사용이 가능하여
