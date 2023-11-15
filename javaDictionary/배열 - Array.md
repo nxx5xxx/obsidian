@@ -186,6 +186,19 @@
 
 ##### 사용 예시4 - Arrays.copyOf
 > System.arrayscopy 메소드를 사용하여 만들어진 메소드이다.  
+> 붙여넣을 배열 = Arrays.copyOf(복사할 배열, 복사할 갯수); 이러한 방식으로 사용이 가능하다   
+> int[] arr1 = {1, 10, 20, 30};  
+> int[] arr3 = Arrays.copyOf(arr1, 3);  
+> System.out.println(Arrays.toString(arr3));  
+> 결괏값 :  
+>\[1, 10, 20]
+>Arrays.copyOf메소드의 단점은 복사할 배열의 0번 인덱스가 고정 이라는것 이다.
+>이를 보충해줄 메소드가 또 있는데 아래를 보자.
+
+##### 사용 예시5 - Arrays.copyOfrange
+> copyOf의 부족한 점을 보충해주는 복제 메소드이다.  
+> 붙여넣을 배열 = Arrays.copyOfRange(복사할 배열, 복사할 인덱스의 시작점, 복사할 갯수);  
+> 의 방법으로 사용할 수 있으며 아래의 예제를 보자.  
 > 
 
 ### 참고사항
