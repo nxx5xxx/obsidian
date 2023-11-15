@@ -166,3 +166,8 @@
 >arr2\[i] = arr1\[i].clone();  
 >}  
 >이렇게 복사를 하여야 한다.
+>
+>
+### 참고사항
+>속도 측면에서 System.ArraysCopy 가 Native 인터페이스를 사용하여 속도가 빠르다고 하지만  
+>StackOverFlow에 따르면 clone과 Arrays.copyOf가 더 빠른것으로 나와있다.  
