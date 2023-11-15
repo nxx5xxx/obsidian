@@ -172,8 +172,8 @@
 > System.arraycopy(원본배열명, 원본배열의 시작인덱스, 새로운배열명, 새배열의 붙여넣을인덱스 , 복사할 항목 개수); 로 사용한다  감이 안온다면 아래의 예시를 보자  
 
 ###### 예시3_2
->int[] arr1 = {1, 10, 20, 30};  
->int[] arr2 = new int[6];     
+>int\[] arr1 = {1, 10, 20, 30};  
+>int\[] arr2 = new int[6];     
 >System.arraycopy(arr1, 1, arr2, 1, arr1.length-1);  
 >System.out.println(Arrays.toString(arr2));   
 >결괏값 :  
@@ -187,8 +187,8 @@
 ##### 사용 예시4 - Arrays.copyOf
 > System.arrayscopy 메소드를 사용하여 만들어진 메소드이다.  
 > 붙여넣을 배열 = Arrays.copyOf(복사할 배열, 복사할 개수); 이러한 방식으로 사용이 가능하다   
-> int[] arr1 = {1, 10, 20, 30};  
-> int[] arr3 = Arrays.copyOf(arr1, 3);  
+> int\[] arr1 = {1, 10, 20, 30};  
+> int\[] arr3 = Arrays.copyOf(arr1, 3);  
 > System.out.println(Arrays.toString(arr3));  
 > 결괏값 :  
 >\[1, 10, 20]
@@ -199,8 +199,8 @@
 > copyOf의 부족한 점을 보충해주는 복제 메소드이다.  
 > 붙여넣을 배열 = Arrays.copyOfRange(복사할 배열, 시작 인덱스, 마지막 인덱스);  
 > 의 방법으로 사용할 수 있으며 아래의 예제를 보자.  
-> int[] arr1 = {1, 10, 20, 30};  
-> int[] arr4 = Arrays.copyOfRange(arr1, 2, 3);  
+> int\[] arr1 = {1, 10, 20, 30};  
+> int\[] arr4 = Arrays.copyOfRange(arr1, 2, 3);  
 > System.out.println(Arrays.toString(arr4));  
 > 결괏값 :  
 > \[20]
