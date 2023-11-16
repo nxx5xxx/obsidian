@@ -11,3 +11,19 @@
 > 대문자로 작성하여 [[언어표기법#카멜 케이스 (Camel Case)|카멜케이스]]가 불가능해 [[언어표기법#스네이크 케이스 (Snake Case)|스네이크 케이스]]를 쓰는것이 관례이다.
 
 #### 사용방법
+> 클래스를 만들듯이 New를 눌러 class가 아닌 enum을 눌러 Enum 타입으로 생성할 수 있고  
+> 아니면 이미 생성된 클래스의 public class ~~~ 부분의 class를 enum으로 바꿔 저장해 주어도 된다.
+
+#### 예시
+> public enum LoginStatus{  
+> LOGIN,  
+> LOGOUT  
+> }  
+
+##### 열거 타입을 사용하는 예시
+> public class EnumTest{  
+>  public static void main(String\[] args){  
+> 	 LoginStatus status = LoginStatus.LOGIN;  
+>  }  
+> }
+
