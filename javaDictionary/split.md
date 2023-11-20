@@ -1,3 +1,4 @@
+#String #regex
 ### 특징
 > split은 내가 원하는 문자열을 기준으로 나눠 문자열 배열로 반환한다.  
 > split은 split(String regex)와 split(String regex, int limit)으로 나뉘는데 여기서 나오는  
