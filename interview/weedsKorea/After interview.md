@@ -43,4 +43,7 @@ Bean을 사용하는 이유
 지금 생각난것  
 각 RDBMS의 차이점  
 아는대로 기술해보자면 Oracle, MySQL, MariaDB 는 관계형 데이터베이스이고  
-Postgres는 객체 
+Postgres는 객체관계형 (ORDBMS)  
+그리고.. Postgres는 update시 기존의 행을 삭제고 변경된 데이터를 새로 추가하는 형태라 느리다.
+
+나중에 각 RDB에 대해서도 정리해야겠다.
