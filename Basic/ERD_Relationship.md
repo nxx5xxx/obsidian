@@ -1,6 +1,6 @@
 
 # ERD 테이블 설계 관계
-> [[after interview#기술면접|면접]]에서 테스트할 때 ERD 설계에서 헤맷던 부분을 보충하기 위해 만듦  
+> [[interview/codingTest/windmillsoft/after interview#기술면접|면접]]에서 테스트할 때 ERD 설계에서 헤맷던 부분을 보충하기 위해 만듦  
 > 
 ## 관계 차수
 1:1 (@OneToOne) / 1:N (@OneToMany) / M:N(@ManyToMany)
