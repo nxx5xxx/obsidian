@@ -59,7 +59,7 @@
 53. [[상속]]
 54. [[Class]]
 55. [[Object]]
-56. 
+56. [[Instance]]
 
 
 ##### about
