@@ -5,5 +5,5 @@
 > 내가 생각하는 Object는 아직 Inctance화 즉 클래스로 부터 생성되기 전의 깔짝거리는 그 상태의  
 > 객체가 오브젝트라고 본다  
 > 예를 들어 실체화 되기 전..?  
-> Object ob = new Object(); 여기서 ob는 인스턴스고 Object가 오브젝트가 아닐까 하는 생각을 한다.  
+> Object ob = new Object(); 여기서 ob는 Object로부터 인스턴스고 Object가 오브젝트가 아닐까 하는 생각을 한다.  
 
