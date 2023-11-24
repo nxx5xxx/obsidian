@@ -20,9 +20,9 @@
 
 
 ### JPA
-> JPA는 Java Persistence API  
+> JPA는 Java Persistence API 
 > 자바 진영에서 ORM(Object-Relational Mapping) 기술 표준으로 사용되는 인터페이스의 모음이다  
 > 뜻풀이  2.  
 > Hibernate, Spring JPA, EcliplseLink 등 과 같은 구현체가 있고 이것의 표준 인터페이스가 JPA
 
->  그리고 EJB Entity 라는 기술또한 너무 안좋아 개빙킹 이라는 개발자가 Hibernate라는 오픈소스를 만들게 된다 이 기술을 가지고 만든 자바 표준인 JPA를 만들게 된다 JPA라는 표준 기술은 인터페이스만 있고 구현체는 따로 만들어야함
+>  EJB Entity 라는 기술또한 너무 안좋아 개빙킹 이라는 개발자가 Hibernate라는 오픈소스를 만들게 된다 이 기술을 가지고 만든 자바 표준인 JPA를 만들게 된다 JPA라는 표준 기술은 인터페이스만 있고 구현체는 따로 만들어야함
