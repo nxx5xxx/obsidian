@@ -1,3 +1,5 @@
+##### 내생각
+> JPA를 할때 들었던지라 Object Relationship management 이런 느낌이겠거니 생각  
 ### 의미
 > Object Relational Mapping 즉 객체 관계 맵핑 ( 객체와 관계를 연결해준다 는 의미 )   
 > 여기서 말하는 Object 는 자바상의 객체를 말하고 Relational 관계는 관계형 데이터 베이스를 의미한다 
