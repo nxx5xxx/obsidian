@@ -70,6 +70,8 @@
 64. [[매개변수]]
 65. [[가변길이 매개변수]]
 66. [[return]]
+67. [[return#early return|early return]]
+68. 
 
 
 ##### about
