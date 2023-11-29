@@ -6,3 +6,14 @@ Open/Closed Principle
 	- 다형성을 활용하여 해결하자
 - 인터페이스를 구현한 새로운 클래스를 하나 만들어서 새로운 기능을 구현
 - 지금까지 배운 역할과 구현의 분리를 잘 생각하기
+
+#### 문제점
+- 구현 객체를 변경하려면 클라이언트 코드를 변경해야한다 = OCP가 깨진다
+> 예 :  
+> MemberRepository m = new MemoryMemberRepository(); 가 기존코드 일 경우  
+> MemberRepository m = new JdbcMemberRepository(); 로 변경
+
+- 분명 다형성을 사용했지만 OCP 원칙을 지킬 수 없다.
+- 이 문제를 어떻게 해결해야 할까?
+- 객체를 생성하고, 연관관계를 맺어주는 별도의 조립 및 설정자가 필요하다
+	- 이 별도의 뭔가를 해주는것이 스프링 컨테이너가 해주는것이다
