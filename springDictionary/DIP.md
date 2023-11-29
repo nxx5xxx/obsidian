@@ -14,3 +14,11 @@ Dependency Inversion Principle
 > MemberRepository m = new MemoryMemberRepositoryImpl();  
 > 그치만 이렇게하면 직접 구현클래스를 선택하기 때문에 DIP 위반이 된다
 
+#### 정리
+- 객체 지향의 핵심은 다형성
+- 다형성 만으로는 쉽게 부품을 갈아 끼우듯이 개발할 수 없다.
+- 다형성 만으로는 구현 객체를 변경할 때 클라이언트 코드도 함께 변경된다.
+- 다형성 만으로는 OCP, DIP를 지킬 수 없다.
+- 그래서 다른 뭔가 더 필요하다.
+
+#### 다른무언가.
