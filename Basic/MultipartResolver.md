@@ -1,4 +1,7 @@
 - MultipartResolver는 Spring MVC에서 파일 업로드와 같은 멀티파트 요청을 처리하기 위한 인터페이스
 - 클라이언트로 부터 전송된 HTTP요청에서 멀티파트 데이터를 읽고 해석하는 기능을 제공한다.
 - 클라이언트의 요청에 멀티파트 데이터가 포함되어 있는지 확인하고, 멀티파트 데이터를 [[파싱]]하여 파일 업로드와 관련된 정보를 추출한다.
-- 스프링 MVC에서 기본적으로 제공하는 MultipartResolver 구현체는 CommonsMultipartResolver이며 이 구현체는 Aph
+- 스프링 MVC에서 기본적으로 제공하는 MultipartResolver 구현체는 CommonsMultipartResolver이며 이 구현체는 Apache Commons FileUpload 라이브러리를 기반으로 멀티파트 요청을 처리한다.
+  CommonsMultipartResolver는 클라이언트의 요청을 파싱하여 MultipartFile객체로 변환하고, 이를 컨트롤러에 전달한다. 컨트롤러에서는 MultipartFile 객체를 통해 업로드된 파일의 정보와 데이터를 얻을 수 있습니다.
+- MultipartResolver를 구성하려면 Spring MVC 구성 파일인 servlet-context.xml에 해당 빈을 아래와 같이 등록해야한다.
+><!-- 파일 업로드를 위한 MutipartResolver 구현체 CommonsMultipartResolver  bean 등록 -> CommonsMultipartResolver를 bean으로 등록하면 multipart/form-data 형식으로 요청 시          input type="file" 태그를 자동적으로 인식하여 MultipartFile 객체로 반환하고 파일 외의 데이터(정수, 문자열 등의 텍스트 데이터)는 기존처럼 사용 가능         (MultipartRequest 필요 없음) --> <bean id="multipartResolver"     class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> <property name="maxUploadSize" value="104857600"/> <property name="maxUploadSizePerFile" value="104857600"/> <property name="maxInMemorySize" value="104857600"/> </bean> <!-- 104857600 byte == 100MB 20971520 byte == 20MB maxUploadSize : 한 요청당 업로드가 허용되는 최대 용량을 바이트 단위로 설정. -1 은 제한이 없다는 뜻으로 이 프로퍼티를 지정하지 않을때 기본값. maxUploadSizePerFile : 한 파일당 업로드가 허용되는 최대 용량을 바이트 단위로 설정. -1 은 제한이 없다는 뜻으로 이 프로퍼티를 지정하지 않을때 기본값. maxInMemorySize : 디스크에 저장하지 않고 메모리에 유지하도록 허용하는 바이트 단위의 최대 용량을 설정. 사이즈가 이보다 클 경우 이 사이즈 이상의 데이터는 파일에 저장. 기본값은 10240 바이트. -->
