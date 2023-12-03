@@ -1,4 +1,4 @@
 - MultipartResolver는 Spring MVC에서 파일 업로드와 같은 멀티파트 요청을 처리하기 위한 인터페이스
 - 클라이언트로 부터 전송된 HTTP요청에서 멀티파트 데이터를 읽고 해석하는 기능을 제공한다.
 - 클라이언트의 요청에 멀티파트 데이터가 포함되어 있는지 확인하고, 멀티파트 데이터를 [[파싱]]하여 파일 업로드와 관련된 정보를 추출한다.
-- 
+- 스프링 MVC에서 기본적으로 제공하는 MultipartResolver 구현체는 CommonsMultipartResolver이며 이 구현체는 Aph
