@@ -10,4 +10,11 @@ public 머시기
 	 System.out.println(sum);
 이렇게 주어지고 내가 코드 채워넣는 방식이였다  
 제일싫어하는 디버깅방식 비슷...  
-해당 문제는 
+해당 문제는  
+	public static void main(String[] args) {  
+		int sum = 0;  
+		for(int i=1;i<1000;i++) {  
+			**if(i%3==0||i%5==0)sum+=i;**  
+		}  
+		System.out.println(sum);  
+	}
