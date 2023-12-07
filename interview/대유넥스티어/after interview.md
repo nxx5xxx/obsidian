@@ -44,7 +44,21 @@ public 머시기
 다른 이상을 제기한적이 없다 하는걸 보아 다른 푸는 방식이 있을걸로 보인다  
 
 ---
-다른바
+다른방식
+	public static void main(String[] args) {
+		int[] numbers = {5,4,2,6,1,3};
+		int tmp=0;
+		for(int i=1;i<numbers.length;i++) {
+			for(int j = 0; j < numbers.length - i; j++) {
+				if(numbers[j] > numbers [j + 1]) {
+					tmp = numbers[j];
+					numbers[j] = numbers[j+1];
+					numbers[j+1] = tmp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(numbers));
+	}
 
 ---
 
