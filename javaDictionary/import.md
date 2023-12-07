@@ -19,4 +19,10 @@
 > 이 경우 해당 객체는 명시적으로 패키지명을 써줘야한다
 
 #### 예시
-> import com.dog.
+> import com.dog.Food;  
+> import com.cat.Food;  
+> 이렇게 import하려는 클래스의 이름이 같은경우  
+> Food food = new Food(); 인스턴스화 할때 에러가 난다  
+> 이것을 해결하기 위해서는
+> com.dog.Food food = new com.dog.Food();  
+> import를 하지않고 이런식으로 패키지명을 포함한 풀네임으로 해주면 된다.
