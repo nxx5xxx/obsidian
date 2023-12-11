@@ -26,4 +26,7 @@
 > 필드 :  
 > private 타입 필드명;  
 > Getter :  
-> public 
+> 접근 제한자 : 
+> public 타입 get필드명(){  
+> return 필드명;  
+> }  
