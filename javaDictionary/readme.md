@@ -82,6 +82,7 @@
 73. [[접근제한자]]
 74. [[Getter와 Setter]]
 75. [[무결성]]
+76. [[Singleton]]
 
 
 ##### about
