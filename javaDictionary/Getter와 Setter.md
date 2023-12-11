@@ -26,4 +26,4 @@
 > 필드 :  
 > private 타입 필드명;  
 > Getter :  
-> 
+> public 
