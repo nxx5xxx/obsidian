@@ -23,4 +23,13 @@
 > Singleton a1 = Singleton.getInstance();  
 > Singleton b1 = Singleton.getInstance();  
 
-| a1 |
+| 스택영역 | |
+|---|---|
+| a1 | 힙주소1 |
+| b1 | 힙주소1 |
+
+|힙영역| |
+|---|---|
+|힙주소1|싱글톤 객체|
+
+> 이것은 == 로 비교해봐도 같은 주소임을 알 수 있다.
