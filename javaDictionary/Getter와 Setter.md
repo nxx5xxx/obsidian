@@ -27,8 +27,9 @@
 > 필드 :  
 > 필드 접근 제한자 : private  
 > private 타입 필드명;
-> 
+ 
 ---
+#### Getter
 > Getter :  
 > 접근 제한자 : public  
 > 리턴타입 : 필드타입  
@@ -38,7 +39,9 @@
 > public 타입 get필드명(){  
 > return 필드명;  
 > }  
->  
+
+---  
+#### Setter
 >Setter :  
 >접근 제한자 : public  
 >리턴 타입 : void  
@@ -48,4 +51,10 @@
 >public void set필드명(타입 필드명){  
 > this.필드명 = 필드명;  
 >}  
->
+
+---
+
+#### boolean 명명규칙
+> 논리타입인 boolean은 필드명 앞에 is를 붙인다  
+> 예시 : 
+> public boolean is
