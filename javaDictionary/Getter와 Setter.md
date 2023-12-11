@@ -57,4 +57,6 @@
 #### boolean 명명규칙
 > 논리타입인 boolean은 필드명 앞에 is를 붙인다  
 > 예시 : 
-> public boolean is
+> public boolean is필드명(){  
+>  return 필드명;  
+> } 
