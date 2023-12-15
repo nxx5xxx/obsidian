@@ -83,7 +83,7 @@
 74. [[Getter와 Setter]]
 75. [[무결성]]
 76. [[Singleton]]
-77. [[상속]]
+77. [[extends]]
 
 ##### about
 > 아직 업데이트 중 이며 obsidian 기준으로 만들어 github에서 보기엔 불편할 수 있습니다  
