@@ -90,6 +90,7 @@
 81. [[메소드 오버라이딩#super.메소드명()|super.메소드명()]]
 82. [[final#final 클래스|final 클래스]]
 83. [[final#final 메소드|final 메소드]]
+84. [[클래스의 타입변환]]
 
 ##### about
 > 아직 업데이트 중 이며 obsidian 기준으로 만들어 github에서 보기엔 불편할 수 있습니다  
