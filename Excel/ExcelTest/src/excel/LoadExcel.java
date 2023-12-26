@@ -35,5 +35,6 @@ public class LoadExcel {
        } catch (IOException e) {
            e.printStackTrace();
        }
+    sc.close();
    }
 }
