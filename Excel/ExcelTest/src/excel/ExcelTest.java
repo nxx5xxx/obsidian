@@ -12,44 +12,35 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelTest {
 
-	public static void main(String[] args) throws IOException {
-		// Blank workbook
-        XSSFWorkbook workbook = new XSSFWorkbook();
-        // Creating a blank Excel sheet
-        XSSFSheet sheet = workbook.createSheet("student Details");
-        // Creating an empty TreeMap of string and Object][] type
-        Map<String, Object[]> data = new TreeMap<String, Object[]>();
-        // Writing data to Object[]
-        // using put() method
-        data.put("1", new Object[] { "ID", "CITY", "STATE" });
-        data.put("2", new Object[] { 1, "Clanton", "Alabama" });
-        data.put("3", new Object[] { 2, "Cordova", "Alaska" });
-        data.put("4", new Object[] { 3, "Clifton", "Arizona" });
-        data.put("5", new Object[] { 4, "Arcadia", "California" });
-  
-	// Iterating over data and writing it to sheet
-	Set<String> keyset = data.keySet(); 
-        int rownum = 0;
-        for (String key : keyset) { 
-            // Creating a new row in the sheet
-            XSSFRow row = sheet.createRow(rownum++); 
-            Object[] objArr = data.get(key); 
-            int cellnum = 0; 
-            for (Object obj : objArr) { 
-                // This line creates a cell in the next column of that row
-                XSSFCell cell = row.createCell(cellnum++); 
-                if (obj instanceof String)
-                    cell.setCellValue((String)obj); 
-                else if (obj instanceof Integer)
-                    cell.setCellValue((Integer)obj);
+    public static void main(String[] args) {
+        // 빈 워크북 생성
+        Workbook workbook = new XSSFWorkbook();
+
+        // 시트 생성
+        Sheet sheet = workbook.createSheet("MySheet");
+
+        // 행 생성
+        Row row = sheet.createRow(0);
+
+        // 셀 생성 및 값 설정
+        Cell cell = row.createCell(0);
+        cell.setCellValue("Hello");
+
+        // 파일에 쓰기
+        try (FileOutputStream fileOut = new FileOutputStream("workbook.xlsx")) {
+            workbook.write(fileOut);
+            System.out.println("Excel 파일이 생성되었습니다.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            // 워크북 닫기
+            try {
+                workbook.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        }     
-        // Writing the workbook
-        FileOutputStream out = new FileOutputStream("gfgcontribute.xlsx");
-        workbook.write(out); 
-        // Closing file output connections
-        out.close();
-	}
+        }
+    }
 
 }
 
