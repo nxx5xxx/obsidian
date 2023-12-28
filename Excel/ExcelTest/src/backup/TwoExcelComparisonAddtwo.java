@@ -1,4 +1,4 @@
-package excel;
+package backup;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class TwoExcelComparison {
+public class TwoExcelComparisonAddtwo {
 
 	public static void main(String[] args) {
 		String fileName1 = "동성초.xlsx";

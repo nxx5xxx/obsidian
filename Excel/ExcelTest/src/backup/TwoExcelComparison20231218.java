@@ -1,4 +1,4 @@
-package excel;
+package backup;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class TwoExcelComparison {
+public class TwoExcelComparison20231218 {
 
 	public static void main(String[] args) {
 		String fileName1 = "동성초.xlsx";
@@ -29,7 +29,7 @@ public class TwoExcelComparison {
 				//System.out.println(ss.getRow(i).getCell(1));
 				for(int j=2;j<ls.getLastRowNum()+1;j++) {
 					if(ls.getRow(j).getCell(9)==null)continue;
-					if(ls.getRow(j).getCell(9).toString().equals(ss.getRow(i).getCell(1).toString())) {
+					if(ls.getRow(j).getCell(9).toString().contains(ss.getRow(i).getCell(1).toString())) {
 						sw=1;
 						System.out.println(ss.getRow(i).getCell(1).toString());
 						System.out.println(ls.getRow(j).getCell(9).toString());
@@ -40,7 +40,6 @@ public class TwoExcelComparison {
 						}else {
 //							System.out.println(ls.getRow(i).getCell(8).getCellType());
 							System.out.println(ls.getRow(j).getCell(8));
-							System.out.println("올바른타입이아닙니다");
 							list.add(00000);
 						}
 						break;
@@ -49,55 +48,6 @@ public class TwoExcelComparison {
 						//list.add(00000);
 					}
 				}
-				// 리스트에 학교목록에 있는것이 있을경우엔 스위치가1 없을경우 스위치0
-				if(sw==0) {
-					for(int j=2;j<ls.getLastRowNum()+1;j++) {
-						if(ls.getRow(j).getCell(9)==null)continue;
-						if(ls.getRow(j).getCell(9).toString().endsWith(ss.getRow(i).getCell(1).toString())) {
-							sw=1;
-							System.out.println(ss.getRow(i).getCell(1).toString());
-							System.out.println(ls.getRow(j).getCell(9).toString());
-//							System.out.println("--------------------------------");
-							if(ls.getRow(j).getCell(8).getCellType() == CellType.NUMERIC) {
-							list.add((int)ls.getRow(j).getCell(8).getNumericCellValue());
-							//System.out.println(ls.getRow(i).getCell(9));
-							}else {
-//								System.out.println(ls.getRow(i).getCell(8).getCellType());
-								System.out.println(ls.getRow(j).getCell(8));
-								list.add(00000);
-							}
-							break;
-						}else {
-							sw=0;
-							//list.add(00000);
-						}
-					}
-				}
-				
-				if(sw==0) {
-					for(int j=2;j<ls.getLastRowNum()+1;j++) {
-						if(ls.getRow(j).getCell(9)==null)continue;
-						if(ls.getRow(j).getCell(9).toString().contains(ss.getRow(i).getCell(1).toString())) {
-							sw=1;
-							System.out.println(ss.getRow(i).getCell(1).toString());
-							System.out.println(ls.getRow(j).getCell(9).toString());
-//							System.out.println("--------------------------------");
-							if(ls.getRow(j).getCell(8).getCellType() == CellType.NUMERIC) {
-							list.add((int)ls.getRow(j).getCell(8).getNumericCellValue());
-							//System.out.println(ls.getRow(i).getCell(9));
-							}else {
-//								System.out.println(ls.getRow(i).getCell(8).getCellType());
-								System.out.println(ls.getRow(j).getCell(8));
-								list.add(00000);
-							}
-							break;
-						}else {
-							sw=0;
-							//list.add(00000);
-						}
-					}
-				}
-				
 				if(sw==0) {
 					System.out.println(ss.getRow(i).getCell(1).toString());
 					System.out.println("-결과없음--------------------------");
