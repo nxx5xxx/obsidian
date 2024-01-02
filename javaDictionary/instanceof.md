@@ -8,12 +8,22 @@
 > 왼쪽의 객체가 오른쪽 타입이랑 같은 타입으면 true를 반환한다. 
 
 #### 예시
-> public void method(Parent parent){  
-> 	if(parent instanceof Child){  
-> 		Child child = (Child) parent;  
-> 	}  
-> }  
-
+>	public static void main(String\[] args) {  
+>		SonTest son = new SonTest("카레","밀감","떡복이");  
+>		System.out.println("sonTest");  
+		  method(son);  
+		ParentsTest parentsTest = new ParentsTest("카레");  
+		System.out.println("parentsTest");  
+		  method(parentsTest);  
+	}  
+	public static void method(ParentsTest parent) {  
+		if(parent instanceof SonTest){  
+			System.out.println("true");  
+			SonTest child = (SonTest) parent;    
+			}else {  
+				System.out.println("false");  
+			}  
+	}  
 #### 예시2 - 자바12버전 이상에서 가능하다
 > if(parent instanceof Child child){  
 > 	//instanceof연산의 결과가 true일경우 우측 타입 변수를 사용할 수 있기때문에 강제타입변환이 필요없다
