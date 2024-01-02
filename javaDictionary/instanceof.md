@@ -27,4 +27,4 @@
 #### 예시2 - 자바12버전 이상에서 가능하다
 > if(parent instanceof Child child){  
 > 	//instanceof연산의 결과가 true일경우 우측 타입 변수를 사용할 수 있기때문에 강제타입변환이 필요없다
-> } 
+> }   
