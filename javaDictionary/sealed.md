@@ -7,7 +7,11 @@
 >public sealed class 클래스명 permits 상속가능하게 할 클래스들(=자식클래스들){ }
 >public sealed class A permits B, C{~}
 
-> sealed 로 만든 부모를 상속받은 자식 클래스는
+> sealed 로 만든 부모를 상속받은 자식 클래스는  
+> final로 더이상 상속을 못하게 하거나  
 > public final class B extends A {}  
-> 
-> public non-sealed class C extends A {}
+
+> non-sealed 를 사용하여 봉인을 해제해 자식클래스를 만들수 있게 하거나  
+> public non-sealed class C extends A {}  
+
+> sealed 를 사용하여 또 다른 봉인클래스로 선언해야한다.
