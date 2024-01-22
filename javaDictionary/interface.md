@@ -54,3 +54,25 @@ public interface 인터페이스명 { ~ }
 > 과 같이 구현객체를 대입해 줄 수 있다.(이는 dog객체를 생성하고 번지를 대입한다고 말하기도 한다)  
 > 물론,  
 > Animal animal = new Dog(); 처럼 대입 할 수도 있다.
+
+---
+
+### 상수필드
+> 인터페이스는 public static final 특성을 갖는 불변의 상수 필드를 멤버로 가질 수 있다.  
+> 인터페이스에 선언된 필드(변수) 는 모두 public static final 특성을 갖고있어  
+> 해당 구문을 생략하더라도 컴파일시에 자동적으로 붙게된다.  
+```
+[public static final] 타입 상수명 = 값 ; 
+```
+
+#### 관례
+> 상수명은 대문자로 하는것이 관례이며 다른 단어가 들어갈 시 언더바(\_)로 구분짓는게 관례이다  
+> 예시 :  
+> SNAKE_CASE 이런식 으로 말이다  
+
+#### 예시
+> public interface Example{  
+> 	double PI = 3.141592;
+> 	int MAX_VOLUME = 10;
+> 	int MIN_VOLUME = 0;
+> }
