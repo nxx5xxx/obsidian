@@ -76,3 +76,9 @@ public interface 인터페이스명 { ~ }
 > 	int MAX_VOLUME = 10;
 > 	int MIN_VOLUME = 0;
 > }
+
+#### 참고사항
+> 상수는 구현객체와 관련 없는 인터페이스 소속 멤버이므로 바로 접근하여 상수값을 사용할 수 있다.
+> 예시 :  
+> System.out.println("파이값은 : "+Example.PI);  
+
