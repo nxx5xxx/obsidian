@@ -82,3 +82,7 @@ public interface 인터페이스명 { ~ }
 > 예시 :  
 > System.out.println("파이값은 : "+Example.PI);  
 
+---
+
+### 추상메소드2
+> 인터페이스는 구현클래스가 재정
