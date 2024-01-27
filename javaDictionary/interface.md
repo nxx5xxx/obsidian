@@ -182,5 +182,20 @@ public interface Example {
 ```
 
 ```
+public class Exam implements Example{
+
+}
+```
 
 ```
+public class StaicMethodTest{
+	public static void main(String[] args){
+		Exam exam = new Exam();
+		exam.defaultMethod();
+
+		Example.staticMethod();
+	}
+}
+```
+
+> default 와 static의 차이로 볼 수 있다
