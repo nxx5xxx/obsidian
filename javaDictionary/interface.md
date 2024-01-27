@@ -133,3 +133,20 @@ public interface 인터페이스명 { ~ }
 [public or private] static 리턴타입 메소드명(매개변수1,매개변수2)...
 ```
 
+#### 사용예시
+```
+public interface Example {
+	public static void ExampleMethod(){
+		System.out.println("스태틱메소드");
+	}
+}
+```
+
+```
+public class StaicMethodTest{
+	public static void main(String[] args){
+		Example.ExampleMethod();
+	}
+}
+```
+> 이런식으로 정적 메소드를 바로 접근하여 사
