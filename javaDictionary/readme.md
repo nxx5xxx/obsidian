@@ -116,7 +116,7 @@
 99. [[interface#추상메소드2|추상메소드3]]
 100. [[interface#디폴트메소드|디폴트메소드]]
 101. [[interface#정적메소드|정적메소드]]
-102. 
+102. [[interface#private 메소드|private 메소드]]
 
 
 ##### about

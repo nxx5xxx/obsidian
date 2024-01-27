@@ -153,4 +153,5 @@ public class StaicMethodTest{
 
 ---
 
-### rp
+### private 메소드
+> 
