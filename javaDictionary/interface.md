@@ -165,10 +165,22 @@ public class StaicMethodTest{
 public interface Example {
 	default void defaultMethod(){
 		System.out.println("디폴트메소드에서 프리베이트 메소드 사용하기");
+		defaultPrivate();
+	}
+	private void defaultPrivate(){
+		System.out.println("defaultPrivate");
 	}
 	
 	public static void staticMethod(){
 		System.out.println("정적메소드에서 프리베이트 메소드 사용하기");
+		staticPrivate();
+	}
+	private static void staticPrivate(){
+		System.out.println("staticPrivate");
 	}
 }
+```
+
+```
+
 ```
