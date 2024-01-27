@@ -136,7 +136,7 @@ public interface 인터페이스명 { ~ }
 #### 사용예시
 ```
 public interface Example {
-	public static void ExampleMethod(){
+	public static void exampleMethod(){
 		System.out.println("스태틱메소드");
 	}
 }
@@ -145,7 +145,7 @@ public interface Example {
 ```
 public class StaicMethodTest{
 	public static void main(String[] args){
-		Example.ExampleMethod();
+		Example.exampleMethod();
 	}
 }
 ```
@@ -154,4 +154,21 @@ public class StaicMethodTest{
 ---
 
 ### private 메소드
-> 
+> 인터페이스에서 private메소드는 default메소드와 정적메소드에서  
+> 사용이 가능하다 단, default 메소드는 구현객체가 필요하다는 점을 유의해야 할것같다.
+
+#### 용도
+> 보통 private 메소드는 중복 코드를 줄이기 위함이라 보면된다.
+
+#### 사용예시
+```
+public interface Example {
+	default void defaultMethod(){
+		System.out.println("디폴트메소드에서 프리베이트 메소드 사용하기");
+	}
+	
+	public static void staticMethod(){
+		System.out.println("정적메소드에서 프리베이트 메소드 사용하기");
+	}
+}
+```
