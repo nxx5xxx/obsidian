@@ -132,3 +132,4 @@ public interface 인터페이스명 { ~ }
 ```
 [public or private] static 리턴타입 메소드명(매개변수1,매개변수2)...
 ```
+
