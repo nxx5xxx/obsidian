@@ -297,15 +297,13 @@ public interface 자식인터페이스 extends 부모인터페이스A, 부모인
 > 아래 예시2를 봐보자
 
 ##### 예시2
-
-
-##### 인터페이스
+###### 인터페이스
 | Dog |
 | ---- |
 | run(); |
 | walk(); |
 | sit(); |
-##### 구현클래스
+###### 구현클래스
 | Animal |
 | ---- |
 | run(){}; |
@@ -316,4 +314,23 @@ public interface 자식인터페이스 extends 부모인터페이스A, 부모인
 > 이와 같이 Dog라는 인터페이스와 Animal 이라는 구현 클래스가 있을 때  
 > 인터페이스 에는 3개의 메소드 클래스에는 5개의 메소드가 있다.  
 > 하지만 구현객체가 인터페이스로 자동 변환되게 되면 나머지 2개의 메소드를 사용하지 못하게 된다.(호출을 못하게됨)  
-> 자동 타입 변환 후 
+> 자동 타입 변환 후 howl()과 fly() 메소드를 호출하고 싶다면 다음과 같이 캐스팅 기호를 사용하여  
+> 원래의 Aniaml클래스로 강제타입 변환해야한다.
+
+```
+Dog dog = new Animal();
+dog.run();
+dog.walk();
+dog.sit();
+```
+
+```
+Animal animal = (Animal) dog;
+animal.run();
+animal.walk();
+animal.sit();
+animal.howl();
+animal.fly();
+```
+
+---
