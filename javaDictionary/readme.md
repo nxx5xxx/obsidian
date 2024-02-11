@@ -117,6 +117,8 @@
 100. [[interface#디폴트메소드|디폴트메소드]]
 101. [[interface#정적메소드|정적메소드]]
 102. [[interface#private 메소드|private 메소드]]
+103. [[interface#다중 인터페이스 구현|다중 인터페이스 구현]]
+104. [[interface#인터페이스 상속|인터페이스 상속]]
 
 
 ##### about
