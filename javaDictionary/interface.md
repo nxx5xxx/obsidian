@@ -199,3 +199,8 @@ public class StaicMethodTest{
 ```
 
 > default 와 static의 차이로 볼 수 있다
+
+---
+
+### 다중 인터페이스 구현
+> 구현 객체는 여러 개의 인터페이스를 상속 할 수 있다(implements)
