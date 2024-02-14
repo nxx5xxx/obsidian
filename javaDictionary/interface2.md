@@ -68,3 +68,4 @@ test.taste(new Grape());
 
 ---
 
+### 객체 타입 확인
