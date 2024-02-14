@@ -110,4 +110,21 @@ public sealed interface InterfaceA permits InterfaceB{
 > 여기서 주목해야 할 부분은 **sealed** 와 **permits** 이다
 
 #### 주의사항과 예시2
-> 위에서 InterfaceB는 InterfaceAㄱ
+> 위에서 InterfaceB는 InterfaceA가 봉인(sealed) 되었기 때문에 InterfaceB는 봉인된 특성을 물려받는다  
+> 그러한 특성때문에 non-sealed나 sealed를 택해야 하는데 sealed를 할경우에는 그냥 냅둬도 되지만 봉인을 해제하여 다른 인터페이스가 InterfaceB를 상속 받고 싶을 경우엔 non-sealed로 봉인을 해제해줘야한다.
+
+```
+public non-sealed interface InterfaceB extends InterfaceA {}
+
+```
+> 여기서 뒤쪽에 InterfaceA는 오타가 아니다  
+> 예시 1에서 인터페이스A는 인터페이스B만 상속 가능토록 봉인한것이고  
+> 예시 2 에서는 인터페이스B를 선언하며 인터페이스A를 상속받아와  
+> 봉인해체하여 다른 인터페이스도 인터페이스B를 상속받을수 있게 끔 한 것이다
+
+
+```
+public interface InterfaceC extends InterfaceB {...}
+```
+> 이것이 가능케 된 것.
+
