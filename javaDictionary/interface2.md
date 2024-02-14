@@ -69,3 +69,16 @@ test.taste(new Grape());
 ---
 
 ### 객체 타입 확인
+> 상속받은 객체 타입을 확인하기위해 사용한 instanceof 연산자와 거의 동일하다  
+> 아래의 예시를 보자
+
+#### 예시
+```
+public void method(Fruit f){
+	System.out.println(f instanceof Apple);
+}
+```
+> 이 예시는 해당 메소드 매개변수인 Fruit에 대입된 구현객체의 타입이 Apple일 경우 True를 반환한다.  
+
+#### 예시2
+> 
