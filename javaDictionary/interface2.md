@@ -80,5 +80,15 @@ public void method(Fruit f){
 ```
 > 이 예시는 해당 메소드 매개변수인 Fruit에 대입된 구현객체의 타입이 Apple일 경우 True를 반환한다.  
 
-#### 예시2
-> 
+#### 참고사항
+> 자바 12버전 이상부터는 instanceof 의 결과가 true일 경우 강제 타입변환을 하지않고도 우측 타입 변수를 사용 할 수 있다.
+
+##### 예시
+> 아래의 Apple apple = (Apple) f; 를 안해줘도 된다는 말이시다.
+```
+public void method(Fruit f){
+	if(f instanceof Apple){
+		Apple apple = (Apple) f;
+	};
+}
+```
