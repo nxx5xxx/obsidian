@@ -109,3 +109,5 @@ public sealed interface InterfaceA permits InterfaceB{
 ```
 > 여기서 주목해야 할 부분은 **sealed** 와 **permits** 이다
 
+#### 주의사항과 예시2
+> 위에서 InterfaceB는 InterfaceAㄱ
