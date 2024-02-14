@@ -46,8 +46,22 @@ public interface Fruit {
 ```
 >구현체 로는 Apple 와 Grape가 있다하고
 ```
-public class Test{}
+public class Test{
 	public void taste(Fruit f){ 
+		f.juicy();
 	}
+}
 ```
 > 이런식으로 인터페이스를 매개변수로 선언 하면
+```
+Test test = new Test();
+Apple apple = new Apple();
+test.taste(apple);
+
+test.taste(new Grape());
+```
+> 가 가능해지는 것이다
+
+#### 예시 설명
+> 즉 taste라는 객체를 호출 할 때 구현객체(Apple,Grape)에 따라 오버라이딩 된것이  
+> 다르므로 실행 내용이 달라지는데 이것을 매개변수의 다형성이라 한다.
