@@ -92,3 +92,20 @@ public void method(Fruit f){
 	};
 }
 ```
+
+---
+
+### 봉인된 인터페이스
+> 자바 15버전부터 사용 할 수 있으며  
+> 자식 인터페이스 생성을 방지하기 위해 사용 할 수 있다.
+
+#### 예시
+> 인터페이스A의 자식 인터페이스는 인터페이스B 만 가능하고 그 외에는  
+> 자식 인터페이스가 될 수 없도록 한다면  다음과 같이 선언할 수 있다.
+```
+public sealed interface InterfaceA permits InterfaceB{
+
+}
+```
+> 여기서 주목해야 할 부분은 **sealed** 와 **permits** 이다
+
