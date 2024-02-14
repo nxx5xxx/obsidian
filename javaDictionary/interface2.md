@@ -36,3 +36,18 @@ myCar.tire1 = new KumhoTire();
 ---
 
 ### 매개변수의 다형성
+> 일반적으로 메소드를 호출 시 매개변수 타입을 부모 타입으로 선언하면 호출 할 때 자동타입 변환에 의해 자식객체로 대입할 수 있다.  비슷한 원리로 인터페이스로 매개변수 타입을 선언하면 여러 구현 객체를 대입 할 수 있다
+
+#### 예시
+```
+public interface Fruit {
+	void juicy();
+}
+```
+>구현체 로는 Apple 와 Grape가 있다하고
+```
+public class Test{}
+	public void taste(Fruit f){ 
+	}
+```
+> 이런식으로 인터페이스를 매개변수로 선언 하면
