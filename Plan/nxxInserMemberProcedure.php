@@ -21,7 +21,20 @@ include_once("$g4_path/common.php");
     <title>Document</title>
 </head>
 <body>
-<? if($_SERVER["REQUEST_METHOD"] == "POST"){?>
+<? if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $nxx_db = $_POST["nxx_db"];
+        $nxx_dbList = explode(',',$nxx_db);
+        foreach($nxx_dbList as $data){
+                echo $data."<br>";
+        }
+?>
+
+<hr>
+ <!-- 
+        자바의 split같은 함수
+        explode (문자열 분할기준 , 분할시킬 문자열변수명 , 옵션 없어도됨 분할개수 지정)
+        예시 : explod('-',$example)
+  -->
 <?php
 $sql = "select * from aa574.g4_member where 1 $search";
 $result = sql_query($sql);

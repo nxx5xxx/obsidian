@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="euc-kr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <form action="nxxInserMemberProcedure.php" method="get">
-        <textarea style="width:100%;text-align:left;" placeholder="í•´ë‹¹í•˜ëŠ” dbëª…ì„ ,ë¡œ êµ¬ë¶„í•˜ê¸°" name="nxx_db"></textarea>
-        <input type="submit" value="ì „ì†¡" />
+    <form action="nxxInserMemberProcedure.php" method="post" name="nxx_form">
+        <textarea style="width:100%;text-align:left;min-height:600px" placeholder="ÇØ´çÇÏ´Â db¸íÀ» ,·Î ±¸ºÐÇÏ±â ¿¹½Ã: a288,a292" name="nxx_db" required></textarea>
+        <input type="text" placeholder="°íÀ¯¹øÈ£(¹®ÀÚ°¡´É)" name="year" style="width:10%" required/>
+        <input type="text" placeholder="ÃÑÇÐ³â(¼ýÀÚ¸¸)" name="grade" style="width:10%" required/>
+        <input type="text" placeholder="ÃÑ¹Ý(¼ýÀÚ¸¸)" name="class" style="width:10%" required/>
+        <input type="text" placeholder="ÃÑ¹øÈ£(¼ýÀÚ¸¸)" name="numb" style="width:10%" required/>
+        <span style="color:red">* ¿¹½Ã 24 1 5 35 ÀÔ·Â ½Ã 24010101ºÎÅÍ 24010535±îÁö ¸¸µé¾îÁöµµ·ÏÇÔ</span><br><br>
+        <input type="submit" value="Àü¼Û" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="¸®¼Â"/>
     </form>
+    <script>
+        function nxx_submit(){
+
+        }
+    </script>
 </body>
 </html>
