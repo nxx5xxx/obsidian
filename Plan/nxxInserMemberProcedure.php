@@ -16,16 +16,45 @@ include_once("$g4_path/common.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="euc-kr">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="euc-kr">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
 <body>
 <? if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $nxx_db = $_POST["nxx_db"];
-        $nxx_dbList = explode(',',$nxx_db);
+	//텍스트에어리어 받아옴
+	$nxx_db = $_POST["nxx_db"];
+	//,기준으로 나눠서 배열생성
+	$nxx_dbList = explode(',',$nxx_db);
+
+	$year = $_POST["year"];
+	$grade = $_POST["grade"];
+	$class = $_POST["class"];
+	$numb = $_POST["numb"];
+
         foreach($nxx_dbList as $data){
-                echo $data."<br>";
+			echo "<span style='color:red;font-size:24px;'>".$data."</span><br>";
+			$nxx_sql = "select * from ".$data.".g4_member";
+			$nxx_result = sql_query($nxx_sql);
+			//for($i = 0;$row=sql_fetch_array($nxx_result);$i++){}
+			echo "<hr>";
+			//앞에 0 추가하기위함
+			for($i = 1;$i<=$grade;$i++){
+				if(strlen($i)<2){
+					$i = "0".$i;
+				}
+				for($j = 1;$j<=$class;$j++){
+					if(strlen($j)<2){
+						$j = "0".$j;
+					}
+					for($l = 1;$l<=$numb;$l++){
+						if(strlen($l)<2){
+							$l = "0".$l;
+						}
+						echo "{$year}{$i}{$j}{$l}<br>";
+					}
+				}
+			}
         }
 ?>
 
@@ -35,36 +64,6 @@ include_once("$g4_path/common.php");
         explode (문자열 분할기준 , 분할시킬 문자열변수명 , 옵션 없어도됨 분할개수 지정)
         예시 : explod('-',$example)
   -->
-<?php
-$sql = "select * from aa574.g4_member where 1 $search";
-$result = sql_query($sql);
-?>
-                <!-- 테이블 제목 -->
-                <table class="service_list" cellpadding="0" cellspacing="0">
-                        <thead>
-                                <tr>
-                                        <th>번호</th>
-                                        <th>진행상황</th>
-                                        <th>서버</th>
-                                        <th>계정명</th>
-                                </tr>
-                        </thead>
-                <!-- //테이블 제목 -->
-                        <!-- 테이블 내용 -->
-                        <tbody>
-        <? for($i=0;$row=sql_fetch_array($result);$i++){?>
-        <!-- CS 북토비 리스트 데이터 테이블셋 -->
-                        <tr class="clk_evt <?=$cls?>" idx="<?=$row[mb_no]?>">
-                                        <td>&nbsp;<?=$row[mb_id]?>&nbsp;</td>
-                                        <td>&nbsp;<?=$row[mb_name]?>&nbsp;</td>
-                                        <td>&nbsp;<?=$row[mb_nick]?>&nbsp;</td>
-                                        <td><?=$row[mb_email]?></td>
-                        </tr>
-                                <input type="hidden" id="name_idx_<?=$row[mb_no]?>" value="<?=$row[mb_no]?>">
-                                <input type="hidden" id="url_idx_<?=$row[mb_no]?>" value="<?=$row[mb_no]?>">
-<?}?>
-                        </tbody>
-                </table>
 
 <?} ?>
 </body>
