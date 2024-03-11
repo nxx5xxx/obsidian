@@ -31,6 +31,10 @@ include_once("$g4_path/common.php");
 	$grade = $_POST["grade"];
 	$class = $_POST["class"];
 	$numb = $_POST["numb"];
+
+	$goyu = $_POST["goyu"];
+	$numb2 = $_POST["numb2"];
+
 	$nxx_sw = $_POST["nxx_radio"];
 	echo $nxx_sw."라디오 테스트";
         foreach($nxx_dbList as $data){
@@ -42,24 +46,32 @@ include_once("$g4_path/common.php");
 			//앞에 0 추가하기위함
 			if($nxx_sw<=2){
 				echo "고유번호학년반번호<br>";
-			// for($i = 1;$i<=$grade;$i++){
-			// 	if(strlen($i)<2){
-			// 		$i = "0".$i;
-			// 	}
-			// 	for($j = 1;$j<=$class;$j++){
-			// 		if(strlen($j)<2){
-			// 			$j = "0".$j;
-			// 		}
-			// 		for($l = 1;$l<=$numb;$l++){
-			// 			if(strlen($l)<2){
-			// 				$l = "0".$l;
-			// 			}
-			// 			echo "{$year}{$i}{$j}{$l}<br>";
-			// 		}
-			// 	}
-			// }
+					for($i = 1;$i<=$grade;$i++){
+						if(strlen($i)<2){
+							$i = "0".$i;
+						}
+						for($j = 1;$j<=$class;$j++){
+							if(strlen($j)<2){
+								$j = "0".$j;
+							}
+							for($l = 1;$l<=$numb;$l++){
+								if(strlen($l)<2){
+									$l = "0".$l;
+								}
+								echo "{$year}{$i}{$j}{$l}<br>";
+							}
+						}
+					}
 			}if($nxx_sw!=1 && $nxx_sw>=2){
 				echo "고유번호학생명수";
+					for($i = 1;$i<=$numb2;$i++){
+						if(strlen($i)<2){
+							$i = "00".$i;
+						}else if(strlen($i)<3){
+							$i = "0".$i;
+						}
+							echo "{$goyu}{$i}<br>";
+					}
 			}
         }
 ?>

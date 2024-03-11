@@ -11,6 +11,7 @@
 </style>
 </head>
 <body>
+    변경점테스트
     <form action="nxxInserMemberProcedure.php" method="post" name="nxx_form">
         <textarea style="width:100%;text-align:left;min-height:600px" placeholder="해당하는 db명을 ,로 구분하기 예시: a288,a292" name="nxx_db" required></textarea>
         <input type="radio" name="nxx_radio" id="nxx_chk1" value="1"> <span style="color:red">* 고유번호+학년+반+번호 (24010101 , a010101) 등</span><br>
@@ -24,11 +25,9 @@
         <span style="color:red">* 예시 24 1 5 35 입력 시 24010101부터 24010535까지 만들어지도록함</span><br><br>
         </div>
         <div id="nxx_ygcn">
-        <input type="text" placeholder="고유번호(문자가능)" name="year" style="width:10%" required/>
-        <input type="text" placeholder="총학년(숫자만)" name="grade" style="width:10%" required/>
-        <input type="text" placeholder="총반(숫자만)" name="class" style="width:10%" required/>
-        <input type="text" placeholder="총번호(숫자만)" name="numb" style="width:10%" required/>
-        <span style="color:red">* 예시 24 1 5 35 입력 시 24010101부터 24010535까지 만들어지도록함</span><br><br>
+        <input type="text" placeholder="고유번호(문자가능)" name="goyu" style="width:10%" required/>
+        <input type="text" placeholder="총번호(숫자만)" name="numb2" style="width:10%" required/>
+        <span style="color:red">* 예시 a24 500 입력 시 a24001부터 a24500까지 만들어지도록 함</span><br><br>
         </div>
         <input type="submit" value="전송" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="리셋"/>
     </form>
