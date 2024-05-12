@@ -28,10 +28,42 @@
 
 ## 코드 예시 (수정됨)
 ### 프로세스
+> 각 프로세스는 독립적으로 실행됨을 나타냄
 ```
-public class MyApp1 { 
+public class Process1 { 
 	public static void main(String[] args) { 
 		System.out.println("프로세스1 이 실행중입니다");
 	} 
-} public class MyApp2 { public static void main(String[] args) { System.out.println("MyApp2 is running..."); // 여기에 MyApp2의 로직을 작성 } }
+} 
+public class Process2 { 
+	public static void main(String[] args) { 
+		System.out.println("프로세스2가 실행중입니다."); 
+	}
+}
+```
+
+### 쓰레드
+```
+class MyThread extends Thread { 
+	public void run() { 
+		for (int i = 1; i <= 5; i++) { 
+			System.out.println(Thread.currentThread().getName() + ": " + i); 
+			try { 
+				Thread.sleep(1000); // 1초 대기 
+			} catch (InterruptedException e) {
+				System.out.println(e); 
+			} 
+		} 
+	} 
+} 
+public class Main { 
+	public static void main(String[] args) { 
+		MyThread thread1 = new MyThread(); 
+		MyThread thread2 = new MyThread(); 
+		thread1.setName("Thread 1"); 
+		thread2.setName("Thread 2"); 
+		thread1.start(); 
+		thread2.start(); 
+	} 
+}
 ```
