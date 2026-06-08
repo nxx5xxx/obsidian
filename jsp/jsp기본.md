@@ -50,5 +50,10 @@ JSP 페이지 내에서 사용할 변수나 메소드를 선언하는 요소
 ```
 <% 
 	int num = 1234;
-	out.println
+	out.println(num);
+%>
 ```
+System.out.println 은 콘솔에 출력
+out.println은 웹화면상에 출력된다
+
+ㄱ
