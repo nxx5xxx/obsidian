@@ -93,6 +93,14 @@ RequestMapping에서 model.addAttribute로 memberList를 보내서 순회했을 
 ```
 이런식으로 사용 가능
 
+**varStatus**
+#varStatus
+루프의 상태를 나타내는 속성
+```
+status.index : 0부터 시작하는 인덱스번호
+status.count : ㄱ
+status.current
+```
 ##### forTokens
 String.split() 또는 StringTokenizer와 같은역할을 한다
 
