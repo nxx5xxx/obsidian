@@ -32,3 +32,31 @@ prefix의 "c" 는 다른것으로도 대체 가능하다 보통 c를 사용한�
 	num은 24보다 크거나 같습니다
 </c:if>
 ```
+
+##### switch
+switch 또는 if/else문 처럼 사용됨
+```
+<c:choose>
+	<c:when num="${num >= 20}"> 20이상 </c:when>
+	<c:when num="${num >= 10}"> 10이상 20미만 </c:when>
+	<c:otherwise> 10미만 </c:otherwise>
+</c:choose>
+```
+
+##### forEach
+반복문
+```
+<c:forEach var="i" begin="1" end="10" step="1">
+	${i}
+</c:forEach>
+```
+
+객체 순회시
+
+```
+<c:forEach var="item" items="${itemList}">
+</c:forEach>
+```
+
+###### forEach문2
+member에 id pw name
