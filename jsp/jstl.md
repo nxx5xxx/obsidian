@@ -98,9 +98,27 @@ RequestMapping에서 model.addAttribute로 memberList를 보내서 순회했을 
 루프의 상태를 나타내는 속성
 ```
 status.index : 0부터 시작하는 인덱스번호
-status.count : ㄱ
-status.current
+status.count : 현재 몇번째인지 1부터시작
+status.current : 현재 아이템(var 속성의 값과 같음)
+status.first : 현재 루프가 첫번째면 true
+status.last : 현재 루프가 마지막이면 true
+status.begtin : begin 속성을 사용했을경우 그 값이 나옴
+status.end : end속성을 사용했을경우 그 값이 나옴
+status.step : step속성을 사용했을경우 그 값이 나옴
 ```
+예시
+```
+<c:forEach var="word" items="${alphabet}" varStatus="status">
+	<p>count no : ${status.count} / index : ${status.index} /  current : ${status.current}
+</c:forEach>
+```
+결과
+```
+count no : 1 / index : 0 / current : A
+count no : 2 / index : 1 / current : B
+count no : 3 / index : 2 / current : C
+```
+
 ##### forTokens
 String.split() 또는 StringTokenizer와 같은역할을 한다
 
