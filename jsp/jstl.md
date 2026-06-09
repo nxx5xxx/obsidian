@@ -20,6 +20,10 @@ prefix의 "c" 는 다른것으로도 대체 가능하다 보통 c를 사용한�
 ```
 
 ###### set2
+```
+<c:set var="root" value="${pageContext.request.servletContext.contextPath}"/>
+```
+로 루트지정할 때 많이사용한다
 
 ##### remove
 변수를 제거
