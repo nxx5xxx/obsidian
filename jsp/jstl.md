@@ -95,6 +95,47 @@ RequestMapping에서 model.addAttribute로 memberList를 보내서 순회했을 
 
 ##### forTokens
 String.split() 또는 StringTokenizer와 같은역할을 한다
+
+예시
+```
+<%-- , 를 기준으로 문자열 분리 --%>
+<c:set var="alphabet" value="A,B,C,D,E,F,G" />
+<ul>
+	<c:forTokens var="word" items="${alphabet}" delims=",">
+		<li>${alphabet}</li>
+	</c:forTokens>
+</ul>
+```
+결과 
+```
+A
+B
+C
+D
+E
+F
+G
 ```
 
+다중구분자 사용시
+예시
 ```
+<%-- , 를 기준으로 문자열 분리 --%>
+<c:set var="alphabet" value="A,B/C,D/E/F,G" />
+<ul>
+	<c:forTokens var="word" items="${alphabet}" delims=",/">
+		<li>${alphabet}</li>
+	</c:forTokens>
+</ul>
+```
+결과
+```
+A
+B
+C
+D
+E
+F
+G
+```
+
