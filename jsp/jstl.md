@@ -19,6 +19,8 @@ prefix의 "c" 는 다른것으로도 대체 가능하다 보통 c를 사용한�
 <c:set var="num" value="25" />
 ```
 
+###### set2
+
 ##### remove
 변수를 제거
 ```
@@ -59,4 +61,27 @@ switch 또는 if/else문 처럼 사용됨
 ```
 
 ###### forEach문2
-member에 id pw name
+member에 id pw addr이 있다고 가정시
+RequestMapping에서 model.addAttribute로 memberList를 보내서 순회했을 때
+
+```
+	<table>
+		<thead>
+			<tr>
+				<td>아이디</td>
+				<td>비밀번호</td>
+				<td>주소</td>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="member" items="${memberList}">
+				<tr>
+					<td>${memberList.id}</td>
+					<td>${memberList.pw}</td>
+					<td>${memberList.addr}</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+```
+이런식으로 사용 가능
