@@ -4,6 +4,8 @@ JSP Standard Tag Library 의 약자
 ## 태그 종류
 
 ### core태그
+https://docs.oracle.com/javaee/1.4/tutorial/doc/
+JAVA 1.4공식문서 기준으로 작성
 
 ```
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
