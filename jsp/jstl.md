@@ -13,7 +13,7 @@ JAVA 1.4공식문서 기준으로 작성
 로 선언 후 사용이 가능하다
 prefix의 "c" 는 다른것으로도 대체 가능하다 보통 c를 사용한다
 
-#### 지원태그
+#### 변수 지원 태그
 ##### set
 변수를 선언하고 값을 할당
 ```
@@ -33,6 +33,7 @@ prefix의 "c" 는 다른것으로도 대체 가능하다 보통 c를 사용한�
 <c:remove var="num" />
 ```
 
+#### 흐름제어 태그
 ##### if
 조건문
 ```
@@ -41,7 +42,7 @@ prefix의 "c" 는 다른것으로도 대체 가능하다 보통 c를 사용한�
 </c:if>
 ```
 
-##### switch
+##### choose
 switch 또는 if/else문 처럼 사용됨
 ```
 <c:choose>
@@ -91,3 +92,9 @@ RequestMapping에서 model.addAttribute로 memberList를 보내서 순회했을 
 	</table>
 ```
 이런식으로 사용 가능
+
+##### forTokens
+String.split() 또는 StringTokenizer와 같은역할을 한다
+```
+
+```
