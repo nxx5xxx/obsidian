@@ -201,4 +201,25 @@ c:import는 같은 웹애플리케이션 내의 자원 뿐만 아니라 불러�
 | application | 웹 애플리케이션 전체     | 서버가 시작되고 종료될 때 까지        |
 
 ##### redirect
- 
+reponse.sendRedirect() 메소드처럼 지정한 페이지로 리다이렉트 시켜주는 기능을 제공
+```
+<c:redirect url="URL주소" [context="컨텍스트경로"]>
+	[<c:param name="이름" value="값" />]
+</c:redirct>
+```
+
+예시
+```
+<c:redirect url="/jsp/test.jsp" context="exam" />
+```
+위의 경우 /exam/jsp/test.jsp로 리다이렉트 된다
+
+예시2
+```
+<c:redirect url="/jsp/test.jsp" context="exam" >
+	<c:param name="num" value="1" />
+</c:redirct>
+```
+/exam/jsp/test.jsp?num=1
+과 같이 값을 전달하며 리다이렉트된다
+
