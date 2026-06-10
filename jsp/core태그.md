@@ -282,3 +282,5 @@ test변수에 /jsp/test.jsp 경로가 문자열로 저장된다
 	에러 발생 <c:out value="${errorMsg}" />
 </c:if>
 ```
+
+##### out
