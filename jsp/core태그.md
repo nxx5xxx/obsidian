@@ -180,5 +180,23 @@ G
 
 읽어온내용을 변수에 저장하여 불러올때
 ```
-<c:import url="./header.jsp" var="header">
+<c:import url="./header.jsp" var="header" scope="session" [charEncoding="UTF-8"]>
+</c:import>
+
+~~~
+
+${header}
 ```
+
+jsp:include와 비슷하지만
+jsp:include는 같은 웹 애플리케이션 내의 자원만을 포함 가능하지만
+c:import는 같은 웹애플리케이션 내의 자원 뿐만 아니라 불러온 url로 부터의 자원까지도 접근이 가능하다
+
+###### scope범위
+| 범위          | 저장범위            | 유지시간                     |
+| ----------- | --------------- | ------------------------ |
+| page        | 현재 페이지 내        | 하나의 페이지가 클라이언트에게 응답할때 까지 |
+| request     | 하나의 http요청 처리과정 | 요청이 들어와 응답할때 까지(포워드 포함)  |
+| session     | 웹브라우저 하나당       | 세션이 만료되거나 브라우저가 닫힐때 까지   |
+| application | 웹 애플리케이션 전체     | 서버가 시작되고 종료될 때 까지        |
+ 
