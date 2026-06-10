@@ -284,3 +284,7 @@ test변수에 /jsp/test.jsp 경로가 문자열로 저장된다
 ```
 
 ##### out
+
+```
+<c:out value="값" [escape]
+```
