@@ -284,7 +284,19 @@ test변수에 /jsp/test.jsp 경로가 문자열로 저장된다
 ```
 
 ##### out
+out.println 과 비슷한역할
+```
+<c:out value="값" [escapeXml="Boolean"] [default="기본값"] />
+escapeXml은 기본적으로 true로 설정되어있다
+여기서 value는 보통 el태그(  ${ }  )와 같이 사용한다
+```
+단, escapeXml이 True로 되어있는경우 
+```
+<c:out value="<script>alert(1); </script>" />
+```
+<script>alert(1); </script>
+라는 문자열이 그대로 출력되고
 
-```
-<c:out value="값" [escape]
-```
+escapeXml이 false인 경우에는
+해당 스크립트가 실행되어 alert 경고창이 뜬다
+default는 출력값이 null일경우 기본적으로 출력되는 값이다
