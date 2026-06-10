@@ -262,3 +262,4 @@ test변수에 /jsp/test.jsp 경로가 문자열로 저장된다
 ```
 /jsp/test.jsp?age=5 로 된다
 
+##### catch
