@@ -237,8 +237,27 @@ request.getParameter("num");request.getParameter("name");request.getParameter("a
 
 ##### url
 url을 생성해준다
+상대 경로에만 컨텍스트 경로를 추가한다
 ```
 <c:url value="URL경로" [var="변수명"] [scope="영역"] >
-
-</c:ㅕㄱ
+	[<c:param name="변수명" value="값" />]
+</c:url>
 ```
+
+예시
+```
+<c:url value="/jsp/test.jsp" var="test" />
+
+${test}
+```
+test변수에 /jsp/test.jsp 경로가 문자열로 저장된다
+
+예시2
+```
+<c:url value="/jsp/test.jsp" var="test">
+	<c:param name="age" value="5" />
+</c:url>
+
+<a href="${test}">링크</a>
+```
+/jsp/test.jsp?age=5 로 된다
