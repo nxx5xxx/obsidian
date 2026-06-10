@@ -264,4 +264,21 @@ test변수에 /jsp/test.jsp 경로가 문자열로 저장된다
 
 ##### catch
 페이지 내에서 발생하는 예외에 대한 처리방식
-에러발생 시 페이지가 멈추거나 깨지는것을 방지 에러정보를 변수에
+에러발생 시 페이지가 멈추거나 깨지는것을 방지 에러정보를 변수에 담음
+```
+<c:catch var="변수명">
+</c:catch>
+```
+
+예시
+```
+<c:catch var="errorMsg">
+	<%
+		int result = 5/0;
+	%>
+</c:catch>
+
+<c:if test="${!empty errorMsg}>
+	에러 발생 <c:out value="${errorMsg}" />
+</c:if>
+```
