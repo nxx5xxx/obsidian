@@ -3,4 +3,6 @@ JSP Standard Tag Library 의 약자
 
 ## 태그 종류
 
-[[core태그#core태그]]
+![[core태그#core태그]]
+
+
