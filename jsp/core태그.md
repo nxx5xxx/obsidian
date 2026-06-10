@@ -20,7 +20,7 @@ prefix의 "c" 는 다른것으로도 대체 가능하다 보통 c를 사용한�
 <c:set var="num" value="25" />
 ```
 
-###### set2
+##### set2
 ```
 <c:set var="root" value="${pageContext.request.servletContext.contextPath}"/>
 ```
@@ -66,7 +66,7 @@ switch 또는 if/else문 처럼 사용됨
 </c:forEach>
 ```
 
-###### forEach문2
+##### forEach문2
 member에 id pw addr이 있다고 가정시
 RequestMapping에서 model.addAttribute로 memberList를 보내서 순회했을 때
 
@@ -165,3 +165,20 @@ G
 ```
 
 #### URL관리 태그
+##### import
+다른 외부 자원이나 페이지의 결과를 현재 페이지에 삽입
+```
+<c:import url="URL주소" [var="변수명"] [scope="영역"] [charEncoding="캐릭터셋"]>
+</c:import>
+```
+
+현재 위치에 읽어온 내용을 붙여넣을때
+```
+<c:import url="./header.jsp">
+</c:import>
+```
+
+읽어온내용을 변수에 저장하여 불러올때
+```
+<c:import url="./header.jsp" var="header">
+```
