@@ -1,4 +1,4 @@
-#core태그
+#core태그 ^0c9f89
 ### core태그
 https://docs.oracle.com/javaee/1.4/tutorial/doc/
 JAVA 1.4공식문서 기준으로 작성
@@ -6,6 +6,9 @@ JAVA 1.4공식문서 기준으로 작성
 ```
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 ```
+
+^3b9f25
+
 로 선언 후 사용이 가능하다
 prefix의 "c" 는 다른것으로도 대체 가능하다 보통 c를 사용한다
 
