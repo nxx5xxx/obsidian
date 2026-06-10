@@ -261,3 +261,4 @@ test변수에 /jsp/test.jsp 경로가 문자열로 저장된다
 <a href="${test}">링크</a>
 ```
 /jsp/test.jsp?age=5 로 된다
+
