@@ -223,3 +223,22 @@ reponse.sendRedirect() 메소드처럼 지정한 페이지로 리다이렉트 �
 /exam/jsp/test.jsp?num=1
 과 같이 값을 전달하며 리다이렉트된다
 
+**여러개의 값 전달도 가능하다**
+```
+<c:redirect url="/jsp/test.jsp" context="exam" >
+	<c:param name="num" value="1" />
+	<c:param name="name" value="홍길동" />
+	<c:param name="age" value="23" />
+</c:redirct>
+```
+받아오는 페이지에서
+request.getParameter("num");request.getParameter("name");request.getParameter("age");
+등으로 확인 가능하다
+
+##### url
+url을 생성해준다
+```
+<c:url value="URL경로" [var="변수명"] [scope="영역"] >
+
+</c:ㅕㄱ
+```
