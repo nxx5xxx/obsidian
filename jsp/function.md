@@ -44,3 +44,20 @@ itemList가 5개의 리스트를 가진 List인 경우
 ## String manipulation
 문자열 조작
 문자열의 데이터를 수정, 분리, 결합, 검색, 변환할 수 있다.
+
+### toUpperCase
+문자열의 모든 문자를 대문자로 변환
+### toLowerCase
+문자열의 모든 문자를 소문자로 변환
+
+```
+${fn:toUpperCase(변수명)}
+
+${fn:toLowerCase(변수명)}
+```
+
+예
+```
+<c:set var="str1" value="Hello World" />
+
+```
