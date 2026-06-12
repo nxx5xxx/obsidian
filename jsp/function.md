@@ -234,6 +234,6 @@ ${fn:split("문자열",separator)}
 A BB CCC D
 ```
 ### join
-
+배열을 seprator(분리기호)을 붙여 stri
 ### escapeXml
 
