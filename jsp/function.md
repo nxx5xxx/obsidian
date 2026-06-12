@@ -1,4 +1,15 @@
 #function
+
+<table>
+	<thead>
+		<th>영역</th><th>기능</th><th>태그</th><th>접두사</th>
+	</theaad>
+	<tbody>
+		<tr>
+		<th colspan="2">함수</th>
+	</tbody>
+</table>
+
 jstl의 내장함수이며
 ```
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
@@ -122,5 +133,14 @@ ${fn:trim(" 010 ")}
 ### replace
 
 ```
-${fn:replace(변수명,변경대상문자열,)}
+${fn:replace(변수명,기존문자열,수정문자열)}
 ```
+예
+```
+${fn:replace("HELLO","LL","M")}
+결과
+HEMO
+```
+
+
+### indexOf
