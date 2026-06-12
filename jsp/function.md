@@ -170,3 +170,18 @@ indexOf : ${fn:indexOf("Oh My Darling","My") }
 ```
 ${fn:startsWith("문자열","대상문자열")}
 ```
+
+예
+```
+${fn:startsWith(" World of Warcraft III","World") }
+${fn:startsWith(" World of Warcraft III"," World") }
+결과
+false
+true
+```
+
+### endsWith
+
+### contains
+
+### containsIgnoreCa
