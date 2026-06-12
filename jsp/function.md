@@ -166,7 +166,7 @@ indexOf : ${fn:indexOf("Oh My Darling","My") }
 ```
 
 ### startsWith
-문자열이 대상문자열(접두사)로 시작하면 True를 반환한다
+문자열이 prefix 접두사(대상문자열)로 시작하면 True를 반환한다
 ```
 ${fn:startsWith("문자열","대상문자열")}
 
@@ -182,8 +182,27 @@ true
 ```
 
 ### endsWith
+문자열이 suffix 접미사로 끝나면 True를 반환한다
+```
+${fn:endsWith("문자열","대상문자열")}
+```
+
+예
+```
+${fn:endsWith(" World of Warcraft III","III ") }
+${fn:endsWith(" World of Warcraft III "," III ") }
+결과
+false
+true
+```
 
 ### contains
+대상문자열을 포함하면 true를 반환
+```
+${fn:contains("문자열","대상문자열")}
+```
+
+
 
 ### containsIgnoreCase
 
