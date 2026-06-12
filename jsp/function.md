@@ -1,7 +1,7 @@
 #function
 jstl의 내장함수이며
 ```
-<%@ taglib prefix="fn" url="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 ```
 로 선언하여 사용할 수 있다.
 EL태그와 함께 사용된다.
