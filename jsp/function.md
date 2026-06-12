@@ -222,9 +222,17 @@ true
 ### split
 문자열을 separator(분리기호)에 따라 나눈 배열로 반환
 ```
-${fn:split("문자열",sepa)}
+${fn:split("문자열",separator)}
 ```
-
+예
+```
+<c:set var="str" value="A,BB,CCC,D" />
+<c:forEach var="arr" items="${fn:split(str,',')}" >
+	${arr}
+</c:forEach>
+결과
+A BB CCC D
+```
 ### join
 
 ### escapeXml
