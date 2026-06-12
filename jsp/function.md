@@ -64,4 +64,26 @@ HELLO WORLD
 ```
 
 ### substring
-문자열에서 
+인덱스를 지정하여 문자열을 반환한다
+```
+${fn:substring(반환할변수명,begin,end)}
+```
+예
+```
+<c:set var="str" value="Hello" />
+${fn:substring(str,1,4)}
+ell
+```
+begin에서 시작해서 end 전까지 반환
+
+### substringAfter
+```
+${fn:substringAfter(변수명,기준이될 문자혹은 문자열)}
+```
+
+예
+```
+<c:set var="str" value="today is goodday" />
+${fn:substringAfter(str,is)}
+
+```
