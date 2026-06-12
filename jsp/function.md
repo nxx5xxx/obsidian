@@ -249,8 +249,16 @@ A-BB-CCC-D-EE
 ### escapeXml
 코어태그 out부분의 escapeXml과 같은역할을 한다
 ![[core태그#out]]
-
+문자 엔티티를 있는 그대로 포함하여 반환
 ```
 ${fn:escapeXml(문자열)}
 ```
 예
+```
+<c:set var="escape" value="<a href=''>Click</a>" />
+${escape}
+${fn:escapeXml(escape)}
+결과
+Click  -----[하이퍼링크가 달려있다]
+<a href=''>Click</>
+```
