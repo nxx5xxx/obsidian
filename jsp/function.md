@@ -6,7 +6,17 @@
 	</theaad>
 	<tbody>
 		<tr>
-		<th colspan="2">함수</th>
+			<th rowspan="2">함수</th><td>컬렉션 길이</td><td>length</td><th rowspan="2">fn</th>
+		</tr>
+		<tr>
+			<td>문자열조작</td><td>toUpperCase, toLowerCase,
+substring, substringAfter,substringBefore
+trim
+replace
+indexOf, startsWith, endsWith, contains, containsIgnoreCase
+split, join
+escapeXml</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -144,3 +154,11 @@ HEMO
 
 
 ### indexOf
+대상문자열이 처음으로 나오는 인덱스를 반환
+```
+${fn:indexOf(문자열,대상문자열)}
+```
+예
+```
+
+```
