@@ -72,11 +72,14 @@ ${fn:substring(반환할변수명,begin,end)}
 ```
 <c:set var="str" value="Hello" />
 ${fn:substring(str,1,4)}
+
+결과
 ell
 ```
 begin에서 시작해서 end 전까지 반환
 
 ### substringAfter
+기준이 될 문자열 이후로 반환한다.
 ```
 ${fn:substringAfter(변수명,기준이될 문자혹은 문자열)}
 ```
@@ -84,6 +87,24 @@ ${fn:substringAfter(변수명,기준이될 문자혹은 문자열)}
 예
 ```
 <c:set var="str" value="today is goodday" />
-${fn:substringAfter(str,is)}
+${fn:substringAfter(str,"is")}
 
+결과
+goodday
 ```
+
+
+### substringBefore
+인덱스0부터 기준이 될 문자열 앞까지 반환한다
+```
+${fn:substringBefore(변수명,기준이될 문자 혹은 문자열)}
+```
+
+예
+```
+${fn:substringBefore("today is Goodday","is")}
+결과
+today 
+```
+
+### trim
