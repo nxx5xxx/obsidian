@@ -160,5 +160,12 @@ ${fn:indexOf(문자열,대상문자열)}
 ```
 예
 ```
+indexOf : ${fn:indexOf("Oh My Darling","My") }
+결과
+3
+```
 
+### startsWith
+```
+${fn:startsWith()}
 ```
