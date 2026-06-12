@@ -63,3 +63,5 @@ ${fn:toUpperCase(str1)}
 HELLO WORLD
 ```
 
+### substring
+문자열에서 
