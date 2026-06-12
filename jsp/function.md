@@ -201,12 +201,29 @@ true
 ```
 ${fn:contains("문자열","대상문자열")}
 ```
-
-
+예
+```
+${fn:contains("today is goodday","is")}
+결과
+true
+```
 
 ### containsIgnoreCase
-
+알파벳의 대소문자는 Letter Case라 한다
+대소문자를 무시하고 포함하면 True를 반환한다
+```
+${fn:containsIgnoreCase("문자열","대상문자열")}
+```
+예
+```
+${fn:containsIgnoreCase("Today iS Goodday","is good")}
+true
+```
 ### split
+문자열을 separator(분리기호)에 따라 나눈 배열로 반환
+```
+${fn:split("문자열",sepa)}
+```
 
 ### join
 
