@@ -166,9 +166,10 @@ indexOf : ${fn:indexOf("Oh My Darling","My") }
 ```
 
 ### startsWith
-문자열이 대상문자열로 시작하면 True를 반환한다
+문자열이 대상문자열(접두사)로 시작하면 True를 반환한다
 ```
 ${fn:startsWith("문자열","대상문자열")}
+
 ```
 
 예
