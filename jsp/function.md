@@ -184,4 +184,11 @@ true
 
 ### contains
 
-### containsIgnoreCa
+### containsIgnoreCase
+
+### split
+
+### join
+
+### escapeXml
+
