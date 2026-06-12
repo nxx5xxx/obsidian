@@ -59,5 +59,7 @@ ${fn:toLowerCase(변수명)}
 예
 ```
 <c:set var="str1" value="Hello World" />
-
+${fn:toUpperCase(str1)}
+HELLO WORLD
 ```
+
