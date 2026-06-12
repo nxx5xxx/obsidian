@@ -234,6 +234,23 @@ ${fn:split("문자열",separator)}
 A BB CCC D
 ```
 ### join
-배열을 seprator(분리기호)을 붙여 stri
+배열을 seprator(분리기호)을 붙여 string으로 반환
+```
+${fn:join(배열,separator)}
+```
+예
+```
+<c:set var="str" value="A,BB,CCC,D,EE" />
+<c:set var="arr" value="${fn:split(str,',')}" />
+${fn:join(arr,'-')}
+결과
+A-BB-CCC-D-EE
+```
 ### escapeXml
+코어태그 out부분의 escapeXml과 같은역할을 한다
+![[core태그#out]]
 
+```
+${fn:escapeXml(문자열)}
+```
+예
