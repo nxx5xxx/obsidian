@@ -130,8 +130,8 @@ ${}
 |                | header           | HTTP 헤더의 값 조회         | ${header.헤더명}           |
 |                | headersValues    | HTTP 헤더의 값 배열 조회      | ${headerValues.헤더명}     |
 |                | cookie           | 쿠키 값 조회               | ${cookie.쿠키명}           |
-|                | initParam        | 컨텍                    |                         |
-|                |                  |                       |                         |
+|                | initParam        | 컨텍스트 초기화 매개변수의 값 조회   | ${initParam.매개변수명}      |
+
 
 
 ## 지연평가구문
