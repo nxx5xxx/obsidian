@@ -118,20 +118,20 @@ ${}
 
 ### ${}지원하는 기본객체
 
-| 유형             | 객체          | 설명            | 코드               |
-| -------------- | ----------- | ------------- | ---------------- |
-| 클라이언트 요청 정보 관련 | pageContext |               |                  |
-|                |             |               |                  |
-|                |             |               |                  |
-|                |             |               |                  |
-|                |             |               |                  |
-|                |             |               |                  |
-|                |             |               |                  |
-|                |             |               |                  |
-|                |             |               |                  |
-|                |             |               |                  |
-|                |             |               |                  |
-|                | pageScope   | page보관소의 값 조회 | ${pageScope.객체명} |
+| 유형             | 객체               | 설명                    | 코드                      |
+| -------------- | ---------------- | --------------------- | ----------------------- |
+| 연결             | pageContext      | JSP의 pageContext 객체   |                         |
+| 스코프            | pageScope        | page보관소의 값 조회         | ${pageScope.객체명}        |
+|                | requestScope     | request 보관소의 값 조회     | ${requestScope.객체명}     |
+|                | sessionScope     | session 보관소의 값 조회     | ${sessionScope.객체명}     |
+|                | applicationScope | application 보관소의 값 조회 | ${applicationScope.객체명} |
+| 요청/헤더/쿠키/설정 6개 | param            | 요청 매개변수의 값 조회         | ${param.매개변수명}          |
+|                | paramValues      | 요청 매개변수의 값 배열 조회      | ${paramValues.매개변수명}    |
+|                | header           | HTTP 헤더의 값 조회         | ${header.헤더명}           |
+|                | headersValues    | HTTP 헤더의 값 배열 조회      | ${headerValues.헤더명}     |
+|                | cookie           | 쿠키 값 조회               | ${cookie.쿠키명}           |
+|                | initParam        | 컨텍                    |                         |
+|                |                  |                       |                         |
 
 
 ## 지연평가구문
