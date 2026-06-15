@@ -28,7 +28,12 @@ ${customer.name} 을 실행 페이지에 그대로 고정하는 의미에서 즉
 나중에 평가된다 하여 지연평가 라 하는것으로 보인다.
 
 ### 값표현식을 사용하여 객체 참조
-rvlue및 lvalue 두 표현식은 
+rvlue및 lvalue 두 표현식은 객체의 프로퍼티와 어트리뷰트를 참조할 수 있다
+* JavaBeans Components
+* Collections (List, Set, Map 등)
+* Java SE enumerated types (열거형 상수 데이터)
+* Implicit objects (기본지원객체-암묵적 객체라 한다)
+
 
 
 ## 즉시평가구문
