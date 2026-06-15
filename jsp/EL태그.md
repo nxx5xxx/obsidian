@@ -12,7 +12,19 @@ EL(Expression Language)는 값 표현식과 메서드표현식 두가지 종류�
 즉시 평가되는 모든 표현식은 ${} 구분자를 사용하며 항상 rvalue 표현식이다.
 지연 평가될 수 있는 표현식은 #{} 구분자를 사용하며 rvalue 및 lvalue 표현식 모두로 작동 가능하다.
 
-원문에 설명이 좀 부족한거 같아 개인적인 견해로 풀어 ㅅ
+원문에 설명이 좀 부족한거 같아 개인적인 견해로 풀어 해석하자면
+### 원문
+>${customer.name}
+#{customer.name}
+The former uses immediate evaluation syntax, whereas the latter uses deferred evaluation syntax. The first expression accesses the name property, gets its value, adds the value to the response, and gets rendered on the page. The same can happen with the second expression. However, the tag handler can defer the evaluation of this expression to a later time in the page lifecycle, if the technology using this tag allows.
+
+${}는 예를들어 index.jsp 페이지를 실행 시 바로 반영하여
+${customer.name} 을 실행 페이지에 그대로 고정하는 의미에서 즉시평가이고,
+#{}은 실행 시 보여주기도 하지만 수정도 가능하다
+마이페이지 수정하기에서 예를 들어보자면
+#{customer.name} 이 예를 들어 김김김 이라 하였을 때
+
+
 
 ## 즉시평가구문
 페이지가 처음 렌더링 될 때 표현식이 평가되고 결과가 반환되는것을 의미.
