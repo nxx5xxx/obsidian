@@ -10,4 +10,14 @@ create user 'name' identified by 'password';
 ```
 grant connect,dba, reource to 'name';
 ```
-으로 연결권한, 
+으로 접속권한, db접속권한, 리소스접속권한 등을 주게되면 물리적 저장공간도 열리게된다
+단, 실제 운영하는 환경에서는 dba를 일반계정에 부여하지않고
+```
+grant connect, resource to 'name';
+alter user 'name' QUOTA 500M ON users;
+또는
+alter user 'name' QUOTA UNLIMITED ON users;
+```
+와 같이 저장공간을 할당해준다
+
+MYSQL에서 다른점은
