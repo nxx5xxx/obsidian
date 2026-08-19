@@ -20,4 +20,14 @@ alter user 'name' QUOTA UNLIMITED ON users;
 ```
 와 같이 저장공간을 할당해준다
 
-MYSQL에서 다른점은
+MYSQL에서 다른점은 DB와 계정이 분리가 되어있어
+스키마생성 명렁과 계정생성 명령이 나뉘어 있다. (스키마명 != DB명)
+DB를 생성할 때는
+```
+create database 'dbname';
+```
+을 한다
+사용은
+```
+use 'dbname';
+```
