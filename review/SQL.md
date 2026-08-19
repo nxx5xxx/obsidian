@@ -31,3 +31,24 @@ create database 'dbname';
 ```
 use 'dbname';
 ```
+
+그리고 계정을 생성할 때 는
+```
+CREATE USER 'name'@'ip' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON 'dbname'.* TO 'name'@'ip';
+FLUSH PRIVILEGES;
+```
+와 같이 적용하게 된다
+여기서 조금 더 추가하자면
+```
+CREATE USER 'name'@'%' IDENTIFIED BY 'password';
+```
+과 같이 적으면 외부 어디서나 접속이 가능하고
+```
+CREATE USER 'name'@'localhost' IDENTIFIED BY 'password';
+```
+로 하면 로컬호스트로만 접속이 가능하며
+```
+CREATE USER 'name'@'110.1.5.%' IDENTIFIED BY 'password';
+```
+로 하면 
