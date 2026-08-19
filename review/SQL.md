@@ -51,4 +51,11 @@ CREATE USER 'name'@'localhost' IDENTIFIED BY 'password';
 ```
 CREATE USER 'name'@'110.1.5.%' IDENTIFIED BY 'password';
 ```
-로 하면 
+로 하면 ip가 110.1.5. 로 시작되는건 접속이 가능하다
+
+그리고 권한 부여 부분에서도 WAS에 물려 돌아가는 런타임 계정에서 테이블을 drop시키는 일이 있을수도 있으므로 기본적은 crud 권한만 부여하는게 좋고 접속 IP도 was서버 대역정도로 지정하는게 좋다
+```
+CREATE USER 'name'@'110.12.123.%' IDENTIFIED BY 'password';
+GRANT SELECT,INSERT,UPDATE,DELETE ON dbname.* TO 'name'@'110.12.123.%';
+GRANT EXECUTE ON dbname.* TO 'name'@'110.12.123.%';
+```
