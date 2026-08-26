@@ -146,3 +146,12 @@ Spring Boot Devtools, Lombok, Spring Configuration Processor을 선택했따
 Spring  Web을 선택했다
 이것까지 설명쓰려니 너무 오래걸릴것 같아 다음에 쓰도록한다
 
+#### Template Engines 선택
+Thymeleaf를 선택하도록했다
+
+#### Security
+후에 Spring Security를 넣을지 말지 정해야겠다
+
+#### SQL
+Spring Data JPA와 MySQL Driver를 선택하였다
+
