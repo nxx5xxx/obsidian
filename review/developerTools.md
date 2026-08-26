@@ -5,4 +5,15 @@
 ## GraalVM Native Support
 애플리케이션 빠른재시작, 라이브리로드, 향상된 개발경험 구성을 제공한다
 라고 간략하게 써있으며
-검색해보니 자바코드를 미리 컴
+검색해보니 자바코드를 미리 컴파일 하여 JVM 없이도 즉시 실행할 수 있게 만드는 기술
+이라 써있다
+
+자세한사항은
+https://docs.oracle.com/ko/learn/graalvm-and-containerisation/index.html#introduction
+를 참고
+
+## GraphQL DGS Code Generation
+스키마파일을 파싱(분석)해서 데이터 타입과 안전한타입의 API를 생성하고 GraphQL API를 조회할수 있도록 한다. 라고 써있으며
+넷플릭스의 DGS(Domain Graph Service) 프레임워크와 Code Generation 기능을 사용하면 GraphQL API를 안전하고 빠르게 개발 할 수 있습니다
+라고 써있다
+
