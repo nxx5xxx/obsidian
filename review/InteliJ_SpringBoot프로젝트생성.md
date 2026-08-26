@@ -135,3 +135,14 @@ spring:
 4.1.1로 선택해본다 바뀐점들이 있을테지만 작은프로젝트 이므로 크게 상관은 없을것 같다
 
 ### DeveloperTools
+#### developerTools선택 
+Spring Boot Devtools, Lombok, Spring Configuration Processor을 선택했따
+설명은 아래와 같다
+
+##### 설명
+![[developerTools]] 
+
+#### Web도구 선택
+Spring  Web을 선택했다
+이것까지 설명쓰려니 너무 오래걸릴것 같아 다음에 쓰도록한다
+
