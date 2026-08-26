@@ -25,3 +25,10 @@ https://docs.oracle.com/ko/learn/graalvm-and-containerisation/index.html#introdu
 반복적으로 재사용되는 코드를 간결하게 나타내도록 도와주는 Java Annotaion 라이브러리 이다
 @Getter, @Setter, @ToString, @NoArgsConstructor등으로 줄여준다
 
+## Spring Configuration Processor
+개발자가 사용자 정의 설정 키를 사용할 때, 상황에 맞는 도움말과 코드 자동완성을 제공할 수 있도록 메타데이터를 생성하는 기능
+
+## Docker compose Support
+향상된 개발경험을 위해 도커구성 지원을 공급하다 라고 써있는데 너무 애매해서 찾아봤다
+
+
