@@ -38,7 +38,18 @@ Grails 프레임 워크에서도 사용된다고 한다
 자동화 및 테스트에 사용된다고 한다 이유로는 빠른 스크립팅과 프로토타이핑에 유용함
 
 ## 타입
-Gra
+Gradle-Groovy , Gradle-Kotlin, Maven 세개가 존재한다 (2026.1 버전기준)
+이전에는 Gradle과 Maven 두가지로만 있었는데 Gradle이 두개로 분류되었다
+Groovy와 Kotlin 두가지의 차이를 구분할 땐
+스크립트 확장자명에서 그분이 가능하다
+```
+Groovy : build.gradle
+Kotlin : build.gradle.kts
+```
+Groovy는 동적타이핑 특성에 의해 빌드시점에서 오류를 알 수 있고
+Kotlin DSL은 실시간 문법검사 및 안전한 리팩토링이 가능해서 Kotlin DSL을 사용하는 추세라고 한다
+Maven은 뭐 예전에 사용하던 그대로 XML이반이다
+
 
 ## 그룹
 
