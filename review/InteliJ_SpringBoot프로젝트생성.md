@@ -57,16 +57,27 @@ Maven은 뭐 예전에 사용하던 그대로 XML기반으로 작성된다
 
 ## 아티팩트
 프로젝트 이름이라고 보면된다 후에 Build하면 Jar나 War파일이 이태픽트이름으로 결과물이 나온다
+그룹이 회사 조직 등을 나타낸다면 Artifact는 그회사에서 만드는 특성 프로젝트 등을 의미한다
+예 : com.회사명.artifact명
+예2: com.navxx.shopping
 ### 작성규칙
 소문자로만 작성하며 단어사이는 하이픈으로 연결하는것이 관례
-예 : shop-api , member-service , 
-
+예 : shop-api , member-service , chatbot-project
 
 ## 패키지이름
+그룹+아티팩트가 패키지이름이 된다
+예: 그룹 com.navxx 아티팩트 shopping
+-> com.navxx.shopping
+
+스프링의 자동탐색은 패키지를 기준으로 컴포넌트 스캔한다 (등록하고 실행한다)
 
 ## JDK
+JavaDevelopmentKit의 줄임말
+JDK에는 JRE(Java RunTime Environment) , JVM(Java Virtual Machine), Development Kit(개발도구) 등이 포함되어있다
+JDK 11버전을 사용했었지만 이제는 17로 넘어가야한다 ( 더이상 최신버전 IDE에서 지원을 안한다 )
 
 ## JAVA
+JDK도 17로 하니 자바도 17버전으로 하겠다
 
 ## 패키지생성
 
