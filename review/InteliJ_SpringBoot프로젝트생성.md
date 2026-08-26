@@ -102,3 +102,30 @@ Web Application Archive(웹애플리케이션보관소)의 약자
 
 
 ## 구성
+Properties와 YAML이 있다
+Properties는 기존에 많이 사용하던 방식이고 Yaml은 중복코드를 많이 없앴는데
+실무에서는 Yaml을 주로 사용한다 Properties는 정말많이 사용해봤으므로 Yaml을 사용해본다
+
+### Properties
+아래와같이 사용되며 키=밸류 형태로 한줄 씩 작성된다
+```
+server.port = 8086
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+spring.datasource.username=
+spring.datasource.password=
+```
+우선순위는 yaml보다 높아 yaml과 properties가 같이있으면 우선적용된다
+
+### YAML
+```
+server:
+  port: 8086
+
+spring:
+  datasource:
+  url: jdbc:mysql://localhost:3306/mydb
+  username:
+  password:
+```
+
+이런식으로 작성된다 대신 Tab이아닌 띄어쓰기 2번으로 들여쓰기 규칙을 지켜야한다
